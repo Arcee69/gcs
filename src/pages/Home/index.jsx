@@ -1,6 +1,7 @@
 import React from 'react'
 import { Divider } from '@mui/material'
 import { CgSpinner } from 'react-icons/cg';
+import { Formik, Form } from 'formik'
 
 import Train from "../../assets/png/train.png"
 import Stroller from "../../assets/png/stroller.png"
@@ -13,7 +14,6 @@ import FifthLauch from "../../assets/png/launch_e.png"
 import Bulb from "../../assets/svg/bulb.svg"
 import Cursor from "../../assets/svg/cursor.svg"
 import Aim from "../../assets/svg/aim.svg"
-import { Formik, Form } from 'formik'
 
 const Home = () => {
 
