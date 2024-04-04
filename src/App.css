@@ -1,0 +1,6 @@
+.plans {
+  /* background: url('../src//assets/img/bg.png') left, url('../src//assets/img/bg.png') right; */
+  background-size: auto;
+  background: url(../src//assets/png/bg.png);
+  background-color: currentcolor;
+}

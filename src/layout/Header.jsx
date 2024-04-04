@@ -14,7 +14,7 @@ const Header = () => {
                 <li className='font-inter font-semibold cursor-pointer text-[15px] text-BLACK-_100'>Events</li>
                 <li className='font-inter font-semibold cursor-pointer text-[15px] text-BLACK-_100' onClick={() => navigate("/services")}>Services</li>
                 <li className='font-inter font-semibold cursor-pointer text-[15px] text-BLACK-_100'>Research</li>
-                <li className='font-inter font-semibold cursor-pointer text-[15px] text-BLACK-_100'>Sustainability Assessment</li>
+                <li className='font-inter font-semibold cursor-pointer text-[15px] text-BLACK-_100' onClick={() => navigate("/sustainability-assessment")}>Sustainability Assessment</li>
             </ul>
             <button className='border border-[#DF5216] rounded-[22px] w-[113px] h-[45px] flex flex-col items-center justify-center p-2'>
                 Contact

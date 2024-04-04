@@ -4,6 +4,7 @@ import Layout from '../layout'
 import Home from '../pages/Home'
 import About from '../pages/About'
 import Services from '../pages/Services'
+import Assessment from '../pages/Assessment'
 
 const Routers = () => {
   return (
@@ -12,6 +13,7 @@ const Routers = () => {
         <Route path='/' element={<Home />} />
         <Route path='/about' element={<About />} />
         <Route path='/services' element={<Services />} />
+        <Route path='/sustainability-assessment' element={<Assessment />} />
       </Route>
       
     </Routes>

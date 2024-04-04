@@ -16,6 +16,7 @@ export default {
 
       fontFamily: {
         'inter': ['Inter'],
+        'kumbh': ['Kumbh Sans'],
       },
       colors: {
         MODAL_BACKGROUND: "rgba(0, 0, 0, 0.23)",
