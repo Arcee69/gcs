@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 
 import Facebook from "../assets/svg/facebook.svg"
 import Twitter from "../assets/svg/twitter.svg"
@@ -12,19 +13,21 @@ const Footer = () => {
         setText(e.target.value)
     }
 
+    const navigate = useNavigate()
+
   return (
     <div className='w-full bg-[#D9D9D9] flex justify-between pl-[102px] pt-[53px] pr-[76px] pb-[29px]'>
         <div className='flex gap-[77px]'>
             <div className='flex flex-col gap-[17px]'>
-                <p className='text-[#5B5B5B] cursor-pointer hover:text-[#5A5A5A] hover:font-medium font-inter text-[15px]'>Green Hydrogen</p>
-                <p className='text-[#5B5B5B] cursor-pointer hover:text-[#5A5A5A] hover:font-medium font-inter text-[15px]'>AI tech for carbon reduction</p>
-                <p className='text-[#5B5B5B] cursor-pointer hover:text-[#5A5A5A] hover:font-medium font-inter text-[15px]'>Transport Circular Economy</p>
-                <p className='text-[#5B5B5B] cursor-pointer hover:text-[#5A5A5A] hover:font-medium font-inter text-[15px]'>CE in infrastructure and buildings</p>
-                <p className='text-[#5B5B5B] cursor-pointer hover:text-[#5A5A5A] hover:font-medium font-inter text-[15px]'>EV and decarbonisation</p>
-                <p className='text-[#5B5B5B] cursor-pointer hover:text-[#5A5A5A] hover:font-medium font-inter text-[15px]'>Bio maritime decarbonisation</p>
-                <p className='text-[#5B5B5B] cursor-pointer hover:text-[#5A5A5A] hover:font-medium font-inter text-[15px]'>Mobility and social impact</p>
+                <p className='text-[#5B5B5B] cursor-pointer hover:text-[#5A5A5A] hover:font-medium font-inter text-[15px]' onClick={() => {navigate("/research/green-hydrogen"); window.scrollTo(0, 0)}}>Green Hydrogen</p>
+                <p className='text-[#5B5B5B] cursor-pointer hover:text-[#5A5A5A] hover:font-medium font-inter text-[15px]' onClick={() => {navigate("/research/tech"); window.scrollTo(0, 0)}}>AI tech for carbon reduction</p>
+                <p className='text-[#5B5B5B] cursor-pointer hover:text-[#5A5A5A] hover:font-medium font-inter text-[15px]' onClick={() => {navigate("/research/transport"); window.scrollTo(0, 0)}}>Transport Circular Economy</p>
+                <p className='text-[#5B5B5B] cursor-pointer hover:text-[#5A5A5A] hover:font-medium font-inter text-[15px]' onClick={() => {navigate("/research/economy"); window.scrollTo(0, 0)}}>CE in infrastructure and buildings</p>
+                <p className='text-[#5B5B5B] cursor-pointer hover:text-[#5A5A5A] hover:font-medium font-inter text-[15px]' onClick={() => {navigate("/research/ev"); window.scrollTo(0, 0)}}>EV and decarbonisation</p>
+                <p className='text-[#5B5B5B] cursor-pointer hover:text-[#5A5A5A] hover:font-medium font-inter text-[15px]' onClick={() => {navigate("/research/maritime"); window.scrollTo(0, 0)}}>Bio maritime decarbonisation</p>
+                <p className='text-[#5B5B5B] cursor-pointer hover:text-[#5A5A5A] hover:font-medium font-inter text-[15px]' onClick={() => {navigate("/research/mobility"); window.scrollTo(0, 0)}}>Mobility and social impact</p>
                 <p className='text-[#5B5B5B] cursor-pointer hover:text-[#5A5A5A] hover:font-medium font-inter text-[15px]'>Active travel</p>
-                <p className='text-[#5B5B5B] cursor-pointer hover:text-[#5A5A5A] hover:font-medium font-inter text-[15px]'>Biofuels</p>
+                <p className='text-[#5B5B5B] cursor-pointer hover:text-[#5A5A5A] hover:font-medium font-inter text-[15px]' onClick={() => {navigate("/research/biofuels"); window.scrollTo(0, 0)}}>Biofuels</p>
             </div>
             <div className='flex flex-col gap-[17px]'>
                 <p className='text-[#5B5B5B] cursor-pointer hover:text-[#5A5A5A] hover:font-medium font-inter text-[15px]'>About Us</p>
