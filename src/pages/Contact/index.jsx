@@ -65,7 +65,7 @@ const Contact = () => {
                                   placeholder="First Name"
                                   type='text'
                                   onChange={handleChange}
-                                  className='w-[276px] h-[58px] border border-[#8F8F8F] p-2.5'
+                                  className='w-[276px] h-[58px] outline-none  border border-[#8F8F8F] p-2.5'
                               />
                               </div>
                               <div className='flex flex-col gap-2 w-[276px]'>
@@ -74,7 +74,7 @@ const Contact = () => {
                                   placeholder="Last Name"
                                   type='text'
                                   onChange={handleChange}
-                                  className='w-[276px] h-[58px] border border-[#8F8F8F] p-2.5'
+                                  className='w-[276px] h-[58px] outline-none  border border-[#8F8F8F] p-2.5'
                               />
                               </div>
 
@@ -86,7 +86,7 @@ const Contact = () => {
                               placeholder="Company Name"
                               type='text'
                               onChange={handleChange}
-                              className='w-[587px] h-[58px] border border-[#8F8F8F] p-2.5'
+                              className='w-[587px] h-[58px] outline-none  border border-[#8F8F8F] p-2.5'
                             />
                           </div>
 
@@ -96,7 +96,7 @@ const Contact = () => {
                               placeholder="Work Email"
                               type='text'
                               onChange={handleChange}
-                              className='w-[587px] h-[58px] border border-[#8F8F8F] p-2.5'
+                              className='w-[587px] h-[58px] outline-none  border border-[#8F8F8F] p-2.5'
                             />
                           </div>
 
@@ -106,7 +106,7 @@ const Contact = () => {
                               placeholder="Phone number"
                               type='text'
                               onChange={handleChange}
-                              className='w-[587px] h-[58px] border border-[#8F8F8F] p-2.5'
+                              className='w-[587px] h-[58px] outline-none  border border-[#8F8F8F] p-2.5'
                             />
                           </div>
 
@@ -116,13 +116,13 @@ const Contact = () => {
                               placeholder="Country"
                               type='text'
                               onChange={handleChange}
-                              className='w-[587px] h-[58px] border border-[#8F8F8F] p-2.5'
+                              className='w-[587px] h-[58px] border outline-none  border-[#8F8F8F] p-2.5'
                             />
                           </div>
                           <div className='w-[587px] flex flex-col gap-2'>
                             <textarea
                               name="message"
-                              className='w-[587px] h-[58px] border border-[#8F8F8F] p-2.5 h-[207px]'
+                              className='w-[587px] outline-none border border-[#8F8F8F] p-2.5 h-[207px]'
                               rows="5"
                               cols="10"
                               placeholder="Message"
@@ -192,7 +192,7 @@ const Contact = () => {
                                 placeholder="First Name"
                                 type='text'
                                 onChange={handleChange}
-                                className='w-[276px] h-[58px] border border-[#8F8F8F] p-2.5'
+                                className='w-[276px] h-[58px] outline-none  border border-[#8F8F8F] p-2.5'
                             />
                             </div>
                             <div className='flex flex-col gap-2 w-[276px]'>
@@ -201,7 +201,7 @@ const Contact = () => {
                                 placeholder="Last Name"
                                 type='text'
                                 onChange={handleChange}
-                                className='w-[276px] h-[58px] border border-[#8F8F8F] p-2.5'
+                                className='w-[276px] h-[58px] outline-none  border border-[#8F8F8F] p-2.5'
                             />
                             </div>
 
@@ -213,7 +213,7 @@ const Contact = () => {
                             placeholder="Company Name"
                             type='text'
                             onChange={handleChange}
-                            className='w-[587px] h-[58px] border border-[#8F8F8F] p-2.5'
+                            className='w-[587px] h-[58px] outline-none border border-[#8F8F8F] p-2.5'
                             />
                         </div>
 
@@ -223,7 +223,7 @@ const Contact = () => {
                             placeholder="Work Email"
                             type='text'
                             onChange={handleChange}
-                            className='w-[587px] h-[58px] border border-[#8F8F8F] p-2.5'
+                            className='w-[587px] h-[58px] outline-none  border border-[#8F8F8F] p-2.5'
                             />
                         </div>
 
@@ -233,7 +233,7 @@ const Contact = () => {
                             placeholder="Country"
                             type='text'
                             onChange={handleChange}
-                            className='w-[587px] h-[58px] border border-[#8F8F8F] p-2.5'
+                            className='w-[587px] h-[58px] outline-none  border border-[#8F8F8F] p-2.5'
                             />
                         </div>
 

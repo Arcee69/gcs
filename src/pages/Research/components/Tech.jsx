@@ -89,7 +89,7 @@ const Tech = () => {
                                     placeholder="First Name"
                                     type='text'
                                     onChange={handleChange}
-                                    className='w-[276px] h-[58px] border border-[#8F8F8F] p-2.5'
+                                    className='w-[276px] h-[58px] outline-none border border-[#8F8F8F] p-2.5'
                                 />
                                 </div>
                                 <div className='flex flex-col gap-2 w-[276px]'>
@@ -98,7 +98,7 @@ const Tech = () => {
                                     placeholder="Last Name"
                                     type='text'
                                     onChange={handleChange}
-                                    className='w-[276px] h-[58px] border border-[#8F8F8F] p-2.5'
+                                    className='w-[276px] h-[58px] outline-none border border-[#8F8F8F] p-2.5'
                                 />
                                 </div>
 
@@ -110,7 +110,7 @@ const Tech = () => {
                                 placeholder="Company Name"
                                 type='text'
                                 onChange={handleChange}
-                                className='w-[587px] h-[58px] border border-[#8F8F8F] p-2.5'
+                                className='w-[587px] h-[58px] outline-none border border-[#8F8F8F] p-2.5'
                                 />
                             </div>
 
@@ -120,7 +120,7 @@ const Tech = () => {
                                 placeholder="Work Email"
                                 type='text'
                                 onChange={handleChange}
-                                className='w-[587px] h-[58px] border border-[#8F8F8F] p-2.5'
+                                className='w-[587px] h-[58px] outline-none border border-[#8F8F8F] p-2.5'
                                 />
                             </div>
 
@@ -130,7 +130,7 @@ const Tech = () => {
                                 placeholder="Country"
                                 type='text'
                                 onChange={handleChange}
-                                className='w-[587px] h-[58px] border border-[#8F8F8F] p-2.5'
+                                className='w-[587px] h-[58px] outline-none border border-[#8F8F8F] p-2.5'
                                 />
                             </div>
 
