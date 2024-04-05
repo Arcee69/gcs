@@ -248,7 +248,7 @@ const Assessment = () => {
 
                 </Formik>
             </div>
-        </div>
+      </div>
     </div>
   )
 }
