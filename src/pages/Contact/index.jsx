@@ -123,7 +123,8 @@ const Contact = () => {
                             <textarea
                               name="message"
                               className='w-[587px] h-[58px] border border-[#8F8F8F] p-2.5 h-[207px]'
-                              // rows="5"
+                              rows="5"
+                              cols="10"
                               placeholder="Message"
                               type='text'
                               onChange={handleChange}
