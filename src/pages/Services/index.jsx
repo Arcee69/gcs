@@ -37,7 +37,7 @@ const Services = () => {
 
       
   return (
-    <div className='mt-20 px-[70px]'>
+    <div className='mt-32 px-[70px]'>
         <div className='flex flex-col gap-[4px]'>
             <p className='text-[#DF632D] font-inter font-semibold text-[41px]'>Our Services</p>
             <p className='text-lg text-[#000] font-inter w-[1094px]'>
@@ -48,11 +48,11 @@ const Services = () => {
                 practices.
             </p>
         </div>
-        <img src={ServicesImg} alt='Services' className='mt-[82px] w-[1080px] mx-auto' />
-        <div className='grid grid-cols-2 gap-6 mt-[151px]'>
+        <img src={ServicesImg} alt='Services' className='mt-[82px] w-[90%] mx-auto' /> {/* 1080px */}
+        <div className='w-full grid grid-cols-2 gap-6 mt-[151px]'>
           {
             ServicesItems.map((item, index) => (
-              <div key={index} className='w-[570px] h-[145px] rounded-lg bg-[#10614E] p-6 flex flex-col gap-[5px]'>
+              <div key={index} className='w-full h-[145px] rounded-lg bg-[#10614E] p-6 flex flex-col gap-[5px]'>
                 <p className='text-[#fff] font-inter font-semibold text-[22px]'>{item?.title}</p>
                 <p className='text-[#fff] text-lg font-inter'>{item?.subtitle}</p>
               </div>

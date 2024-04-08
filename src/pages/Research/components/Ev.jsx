@@ -16,7 +16,7 @@ const Ev = () => {
     }
 
   return (
-    <div className='mt-20'>
+    <div className='mt-32'>
         <div className='flex flex-col gap-[4px] pl-[62px]'>
             <p className='text-[#000] font-inter font-semibold text-[59px]'>Research</p>
             <p className='text-[22px] text-[#000] font-inter w-[1074px]'>

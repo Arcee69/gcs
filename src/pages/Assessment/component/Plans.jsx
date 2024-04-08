@@ -20,7 +20,7 @@ export default function Plans() {
                     <div className='-left-56 mt-[12%] flex z-40 absolute h-[573px]'> {/* w-[572px] */}
                         <img src={Intro} alt='' className='w-full h-full object-contain brightness-50'/>
                     </div>
-                    <div className='w-full xl:w-full lg:w-[90%] h-[600px] md:-left-[63%] lg:-left-[50%] xl:left-0 mt-[2%]   md:absolute xl:relative   rounded-[30px]'>
+                    <div className='w-full xl:w-full lg:w-[90%] h-[600px] md:-left-[63%] lg:-left-[50%] xl:-left-36 mt-[2%]   md:absolute xl:relative   rounded-[30px]'>
                     <img src={Intro1}  alt='' className='w-full h-full  brightness-50'/>
 
                     </div>

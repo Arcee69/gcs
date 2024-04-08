@@ -6,7 +6,7 @@ import Footer from './Footer'
 const Layout = () => {
   return (
     <div className='overflow-x-hidden'>
-        <div>
+        <div className='w-full relative fixed z-50'>
             <Header />
         </div>
         <div>

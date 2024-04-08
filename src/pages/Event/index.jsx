@@ -13,10 +13,10 @@ const Event = () => {
     }
 
   return (
-    <div className='mt-20'>
+    <div className='mt-32 w-full'>
         <div className='flex flex-col gap-[55px] pl-[95px]'>
             <p className='text-[#DF632D] font-inter font-semibold text-[41px]'>Events</p>
-            <div className='flex items-center justify-between px-[69px] w-[1109px] h-[487px] bg-[#F6FFF2]'>
+            <div className='flex items-center justify-between px-[69px] w-[90%] h-[487px] bg-[#F6FFF2]'> {/* 1109px */}
                 <div className='flex flex-col gap-[13px]'>
                     <p className='w-[236px] font-medium font-inter text-[23px] text-[#000]'>The Grand Launch by Andy Street CBE</p>
                     <p className='w-[296px] font-bold font-inter text-[19px] text-[#000]'>Rt Hon. Mayor of West Midlands</p>
@@ -25,7 +25,7 @@ const Event = () => {
                         and social value in Transport
                     </p>
                 </div>
-                <img src={Banner} alt='Event Banner' className='w-[550px]'/>
+                <img src={Banner} alt='Event Banner' className='w-[55%]'/>
             </div>
         </div>
         <div className='flex items-center justify-center mt-[165px] flex-col'>

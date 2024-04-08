@@ -2,6 +2,7 @@ import React from 'react'
 import { Divider } from '@mui/material'
 import { CgSpinner } from 'react-icons/cg';
 import { Formik, Form } from 'formik'
+import { useNavigate } from 'react-router-dom';
 
 import Train from "../../assets/png/train.png"
 import Stroller from "../../assets/png/stroller.png"
@@ -10,6 +11,7 @@ import SecondLauch from "../../assets/png/launch_b.png"
 import ThirdLauch from "../../assets/png/launch_c.png"
 import FourthLauch from "../../assets/png/launch_d.png"
 import FifthLauch from "../../assets/png/launch_e.png"
+import Banner from "../../assets/png/banner.png"
 
 import Bulb from "../../assets/svg/bulb.svg"
 import Cursor from "../../assets/svg/cursor.svg"
@@ -50,8 +52,10 @@ const Home = () => {
 
   }
 
+  const navigate = useNavigate()
+
   return (
-    <div className='flex flex-col'>
+    <div className='w-full flex flex-col mt-20'>
       <div
         style={{ backgroundImage: `url(${Train})`, backgroundSize:"cover", backgroundRepeat: "no-repeat", position:"relative" }}
         className='w-full h-[587px] '
@@ -75,7 +79,7 @@ const Home = () => {
               </p>
             </div>
             <button
-              className='border border-[#fff] text-center p-2 w-[113px] rounded-[22px]'
+              className='border hover:border-[#DF5216] border-[#fff] text-center p-2 w-[113px] rounded-[22px]'
             >
               <p className='text-[#fff]'>Learn More</p>
             </button>  
@@ -83,7 +87,8 @@ const Home = () => {
           <div></div>
         </div>
       </div>
-      <div className='relative mt-[35px] flex gap-[144px] px-[130px] '>
+      <img src={Banner} alt='banner' className='mx-auto w-[80%]'/>
+      <div className='relative mt-[35px] flex justify-between px-[130px] '>
         <div className='flex flex-col w-[505px] gap-[36px]'>
           <div className='flex flex-col gap-[9px]'>
             <div className='flex items-center gap-4'>
@@ -163,7 +168,10 @@ const Home = () => {
             and many more, symbolising our collective commitment to sustainability, environmental impact reduction, 
             and value creation for our communities and businesses.
           </p>
-          <button className='w-[251px] h-[62px] p-2 rounded-[31px] border border-[#DF7B1F]'>
+          <button 
+            className='w-[251px] h-[62px] p-2 rounded-[31px] border hover:border-[#DF7B1F]'
+            onClick={() => navigate("/about")}
+          >
             <p className='font-inter text-BLACK-_100 font-semibold text-xl'>About us</p>
           </button>
         </div>
@@ -183,10 +191,10 @@ const Home = () => {
             change in sustainability practices.
           </p>
         </div>
-        <div className='grid grid-cols-2 gap-6 mt-[59px]'>
+        <div className='w-full grid grid-cols-2 gap-6 mt-[59px]'>
           {
             Services.map((item, index) => (
-              <div key={index} className='w-[570px] h-[145px] rounded-lg bg-[#10614E] p-6 flex flex-col gap-[5px]'>
+              <div key={index} className='w-full h-[145px] rounded-lg bg-[#10614E] p-6 flex flex-col gap-[5px]'>
                 <p className='text-[#fff] font-inter font-semibold text-[22px]'>{item?.title}</p>
                 <p className='text-[#fff] text-lg font-inter'>{item?.subtitle}</p>
               </div>

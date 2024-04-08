@@ -116,7 +116,7 @@ const Assessment = () => {
   }
 
   return (
-    <div className='mt-20'>
+    <div className='mt-32 w-full'>
       <div className='flex flex-col gap-[4px] pl-[95px]'>
         <p className='text-[#DF632D] font-inter font-semibold text-[41px]'>Sustainability Assessment</p>
         <p className='text-[22px] text-[#000] font-inter w-[949px]'>
@@ -124,7 +124,7 @@ const Assessment = () => {
           GCS aligns organisations with the global sustainable development goals
         </p>
       </div>
-      <img src={Sustainability} alt='Sustainability-Assessment' className='mt-[82px] w-[1080px] mx-auto' />
+      <img src={Sustainability} alt='Sustainability-Assessment' className='mt-[82px] w-[85%] mx-auto' /> {/* w-[1080px] */}
       <p className='text-center font-semibold text-[46px] mt-40'>The Sustainability Assessment Framework</p>
       <div className='flex flex-col gap-[74px] mt-[59px] px-[65px]'>
         <Divider className='bg-[#E1E1E1]' />

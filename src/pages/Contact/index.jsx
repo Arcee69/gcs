@@ -14,7 +14,7 @@ const Contact = () => {
   }
 
   return (
-    <div className='mt-20 px-[62px]'>
+    <div className='mt-32 px-[62px] w-full'>
       <div className='flex items-start gap-[99px] mt-[160px]'>
         <div className='flex flex-col gap-[283px] justify-between'>
           <div className='flex flex-col gap-[8px]'>

@@ -12,7 +12,7 @@ const About = () => {
   const loading = false
 
   return (
-    <div className='mt-20'>
+    <div className='w-full mt-32'>
       <div className='flex flex-col px-[100px]'>
         <div className='flex gap-[90px]'>
           <p className='text-[#DF632D] font-semibold font-inter text-[41px]'>About Us</p>
@@ -60,7 +60,7 @@ const About = () => {
             consultancy but also a global leader in safety, reliability and assurance systems engineering 
             systems consultancy, within the train metro and energy sectors.
           </p>
-          <button className='w-[251px] h-[62px] p-2 rounded-[31px] mt-5 border border-[#DF7B1F]'>
+          <button className='w-[251px] h-[62px] p-2 rounded-[31px] mt-5 border  hover:border-[#DF7B1F]'>
             <p className='font-inter text-BLACK-_100 font-semibold text-xl'>Visit ART</p>
           </button>
         </div>

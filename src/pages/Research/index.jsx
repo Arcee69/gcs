@@ -7,16 +7,19 @@ import Tech from "../../assets/png/tech.png"
 import Economy from "../../assets/png/economy.png"
 
 import ArrowUp from "../../assets/svg/arrow-up.svg"
+import { useNavigate } from 'react-router-dom'
 
 const Research = () => {
 
   const loading = false
 
+  const navigate = useNavigate()
+
   const research = [
     {
       title: "Green Hydrogen",
-      icon: Hydrogen,
-      link: "/research/hydrogen",
+      icon: Tech,
+      link: "/research/green-hydrogen",
       arrow: ArrowUp
     },
     {
@@ -27,14 +30,50 @@ const Research = () => {
     },
     {
       title: "Transport Circular Economy",
-      icon: Economy,
+      icon: Tech,
+      link: "/research/transport",
+      arrow: ArrowUp
+    },
+    {
+      title: "Circular economy in infrastructure and buildings ",
+      icon: Tech,
       link: "/research/economy",
+      arrow: ArrowUp
+    },
+    {
+      title: "Electric vehicles and decarbonisation ",
+      icon: Tech,
+      link: "/research/ev",
+      arrow: ArrowUp
+    },
+    {
+      title: "Biofuels ",
+      icon: Tech,
+      link: "/research/biofuels",
+      arrow: ArrowUp
+    },
+    {
+      title: "Bio maritime decarbonisation  ",
+      icon: Tech,
+      link: "/research/maritime",
+      arrow: ArrowUp
+    },
+    {
+      title: "Mobility and social impact",
+      icon: Tech,
+      link: "/research/mobility",
+      arrow: ArrowUp
+    },
+    {
+      title: "Active Travel",
+      icon: Tech,
+      link: "/research",
       arrow: ArrowUp
     },
   ]
 
   return (
-    <div className='mt-20'>
+    <div className='mt-32'>
       <div className='flex flex-col gap-[4px] pl-[95px]'>
         <p className='text-[#DF632D] font-inter font-semibold text-[41px]'>Research</p>
         <p className='text-[22px] text-[#000] font-inter w-[1074px]'>
@@ -43,11 +82,11 @@ const Research = () => {
           technology. 
         </p>
       </div>
-      <div className='grid grid-cols-3 px-[140px] mt-[65px]'>
+      <div className='grid w-full gap-16 grid-cols-3 px-[140px] mt-[65px]'>
         {
           research.map((item, index) => (
-            <div key={index} className='bg-[#234E49] w-[287px] h-[290px] flex flex-col justify-between p-4'>
-              <div className='flex items-start '>
+            <div key={index} className='bg-[#234E49] w-[100%] hover:bg-[#4D61FC] cursor-pointer h-[290px] flex flex-col justify-between p-4' onClick={() => {navigate(item?.link); window.scroll(0, 0)}}>
+              <div className='flex items-start justify-between '>
                 <p className='font-inter font-medium text-[#fff] text-[30px]'>{item?.title}</p>
                 <img src={item?.arrow} alt='arrow-up'/>
               </div>
