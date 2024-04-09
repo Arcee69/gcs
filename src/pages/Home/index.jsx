@@ -77,7 +77,7 @@ const Home = () => {
             right: 0,
           }}
         >
-          <div className='flex flex-col gap-[32px]'>
+          <div className='flex flex-col gap-[32px] animate__animated animate__fadeInUpBig'>
             <div className='flex flex-col gap-[9px] w-full lg:w-[417px]'>
               <p className='font-bold text-WHITE-_100 font-inter text-4xl lg:text-[51px] lg:leading-[68px]'>Global Centre of Excellence in Sustainability</p>
               <p className='font-medium font-inter text-[17px] text-[#fff]'>
@@ -94,7 +94,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className='mx-auto w-[70%] hidden lg:flex justify-between items-center'>
+      <div className='mx-auto w-[70%] hidden lg:flex justify-between items-center animate__animated animate__fadeInRight  animate__delay-2s'>
         <img src={Art} alt='Art' />
         <img src={Cesvit} alt='Cesvit' />
         <img src={Transport} alt='Transport'/>
@@ -106,7 +106,7 @@ const Home = () => {
       
       <div className='relative mt-[35px] flex flex-col lg:flex-row justify-between px-5 lg:px-[130px] '>
 
-        <div className='flex flex-col items-center justify-center relative lg:hidden'>
+        <div className='flex flex-col items-center justify-center relative animate__animated animate__fadeInUpBig animate__delay-2s lg:hidden'>
           <div className='bg-[#02A396] w-[243px] h-[125px] rounded-[171px]'></div>
           <div className='flex absolute top-[43px] right-[37px] md:right-[200px]'>
             <div className='bg-[#FFDECD] w-[243px] h-[390px] rounded-[171px]'></div>
@@ -154,7 +154,7 @@ const Home = () => {
           </div>
         </div>
 
-        <div className='hidden lg:flex flex-col relative '>
+        <div className='hidden lg:flex flex-col relative animate__animated animate__fadeInRightBig animate__delay-2s'>
           <div className='bg-[#02A396] w-[343px] h-[225px] rounded-[171px]'></div>
           <div className='flex absolute top-[43px] right-[37px]'>
             <div className='bg-[#FFDECD] w-[343px] h-[537px] rounded-[171px]'></div>
@@ -163,7 +163,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className='mt-[160px]  flex flex-col'>
+      <div className='mt-[160px] animate__animated animate__fadeInUpBig animate__delay-2s flex flex-col'>
         <div className='px-5 lg:px-[70px]'>
           <div className='flex flex-col'>
             <Divider className='bg-[#000]'/>
@@ -174,14 +174,14 @@ const Home = () => {
           </p>
         </div>
         <div className='relative mt-5'>
-          <div className='flex flex-col items-center lg:flex-row gap-14 '>
-            <img src={FirstLauch} alt='FirstLauch' className=' hidden lg:block md:w-[443px] left-0' />
-            <img src={SecondLauch} alt='SecondLauch' className='md:w-[543px]'/>
-            <img src={ThirdLauch} alt='ThirdLauch' className=' hidden lg:block md:w-[443px] right-0' />
+          <div className='flex flex-col items-center lg:flex-row justify-between'>
+            <img src={FirstLauch} alt='FirstLauch' className=' hidden lg:block hover:scale-105 md:w-[443px] left-0' />
+            <img src={SecondLauch} alt='SecondLauch' className='md:w-[543px] hover:scale-105'/>
+            <img src={ThirdLauch} alt='ThirdLauch' className=' hidden lg:block md:w-[443px] right-0 hover:scale-105' />
           </div>
           <div className='hidden lg:flex flex-col md:flex-row justify-between'>
-            <img src={FourthLauch} alt='FourthLauch' className=' w-[443px] relative lg:-top-14 lg:-z-10 lg:left-44' />
-            <img src={FifthLauch} alt='FifthLauch' className='w-[443px] relative lg:-top-24 lg:right-8' />
+            <img src={FourthLauch} alt='FourthLauch' className=' w-[443px] hover:scale-105 relative lg:-top-14 lg:-z-10 lg:left-44' />
+            <img src={FifthLauch} alt='FifthLauch' className='w-[443px] hover:scale-105 relative lg:-top-24 lg:right-8' />
           </div>
         </div>
 
@@ -207,7 +207,7 @@ const Home = () => {
           <Divider className='bg-[#000]'/>
           <p className='font-inter text-[9px] font-bold'>GCS SERVICES</p>
         </div>
-        <div className='lg:px-[25px] mt-[82px] flex flex-col gap-[14px]'>
+        <div className='lg:px-[25px] mt-[82px] flex flex-col gap-[14px] animate__animated animate__fadeInRightBig animate__delay-2s'>
           <p className='font-inter font-semibold text-[38px] text-BLACK-_100'>Our Services</p>
           <p className='font-inter text-lg text-BLACK-_100 text-justify'>
             The demand for sustainable practices is rapidly increasing as businesses and governments recognise the urgency of addressing 
@@ -235,7 +235,7 @@ const Home = () => {
         </div>
         
         <div className='flex items-center justify-center mt-[104px] flex-col'>
-          <p className='lg:w-[736px] text-center font-medium font-inter text-3xl lg:text-[67px] lg:leading-[82px]'>
+          <p className='lg:w-[736px] text-center font-medium font-inter text-3xl lg:text-[67px] lg:leading-[82px] animate__animated animate__fadeInRight  animate__delay-2s'>
             Let’s Collaborate in building a better future
           </p>
           <div className='mt-[40px] lg:mt-[100px] mb-[240px]'>

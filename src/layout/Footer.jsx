@@ -16,8 +16,15 @@ const Footer = () => {
     const navigate = useNavigate()
 
   return (
-    <div className='w-full bg-[#D9D9D9] flex flex-col lg:flex-row justify-between px-5 lg:pl-[102px] pt-[53px]  md:pr-[76px] pb-[29px]'>
+    <div className='w-full bg-[#D9D9D9] flex flex-col lg:flex-row justify-between animate__animated animate__fadeInUp px-5 lg:pl-[102px] pt-[53px]  md:pr-[76px] pb-[29px]'>
         <div className='flex flex-col lg:flex-row gap-[77px]'>
+            <div className='flex flex-col lg:hidden gap-[17px]'>
+                <p className='text-[#5B5B5B] cursor-pointer hover:text-[#5A5A5A] hover:font-medium font-inter text-[15px]' onClick={() => {navigate("/about"); window.scrollTo(0, 0)}}>About Us</p>
+                <p className='text-[#5B5B5B] cursor-pointer hover:text-[#5A5A5A] hover:font-medium font-inter text-[15px]' onClick={() => {navigate("/research"); window.scrollTo(0, 0)}}>Research</p>
+                <p className='text-[#5B5B5B] cursor-pointer hover:text-[#5A5A5A] hover:font-medium font-inter text-[15px]' onClick={() => {navigate("/events"); window.scrollTo(0, 0)}}>Event</p>
+                <p className='text-[#5B5B5B] cursor-pointer hover:text-[#5A5A5A] hover:font-medium font-inter text-[15px]' onClick={() => {navigate("/contact"); window.scrollTo(0, 0)}}>Contact</p>
+                <p className='text-[#5B5B5B] cursor-pointer hover:text-[#5A5A5A] hover:font-medium font-inter text-[15px]' onClick={() => {navigate("/sustainability-assessment"); window.scrollTo(0, 0)}}>Sustainability Assessment</p>
+            </div>
             <div className='flex flex-col gap-[17px]'>
                 <p className='text-[#5B5B5B] cursor-pointer hover:text-[#5A5A5A] hover:font-medium font-inter text-[15px]' onClick={() => {navigate("/research/green-hydrogen"); window.scrollTo(0, 0)}}>Green Hydrogen</p>
                 <p className='text-[#5B5B5B] cursor-pointer hover:text-[#5A5A5A] hover:font-medium font-inter text-[15px]' onClick={() => {navigate("/research/tech"); window.scrollTo(0, 0)}}>AI tech for carbon reduction</p>
@@ -29,11 +36,12 @@ const Footer = () => {
                 <p className='text-[#5B5B5B] cursor-pointer hover:text-[#5A5A5A] hover:font-medium font-inter text-[15px]'>Active travel</p>
                 <p className='text-[#5B5B5B] cursor-pointer hover:text-[#5A5A5A] hover:font-medium font-inter text-[15px]' onClick={() => {navigate("/research/biofuels"); window.scrollTo(0, 0)}}>Biofuels</p>
             </div>
-            <div className='flex flex-col gap-[17px]'>
+            <div className='hidden lg:flex flex-col gap-[17px]'>
                 <p className='text-[#5B5B5B] cursor-pointer hover:text-[#5A5A5A] hover:font-medium font-inter text-[15px]' onClick={() => {navigate("/about"); window.scrollTo(0, 0)}}>About Us</p>
                 <p className='text-[#5B5B5B] cursor-pointer hover:text-[#5A5A5A] hover:font-medium font-inter text-[15px]' onClick={() => {navigate("/research"); window.scrollTo(0, 0)}}>Research</p>
                 <p className='text-[#5B5B5B] cursor-pointer hover:text-[#5A5A5A] hover:font-medium font-inter text-[15px]' onClick={() => {navigate("/events"); window.scrollTo(0, 0)}}>Event</p>
                 <p className='text-[#5B5B5B] cursor-pointer hover:text-[#5A5A5A] hover:font-medium font-inter text-[15px]' onClick={() => {navigate("/contact"); window.scrollTo(0, 0)}}>Contact</p>
+                <p className='text-[#5B5B5B] cursor-pointer hover:text-[#5A5A5A] hover:font-medium font-inter text-[15px]' onClick={() => {navigate("/sustainability-assessment"); window.scrollTo(0, 0)}}>Sustainability Assessment</p>
             </div>
         </div>
 

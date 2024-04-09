@@ -38,7 +38,7 @@ const Services = () => {
       
   return (
     <div className='mt-32 px-5 lg:px-[60px]'>
-        <div className='flex flex-col gap-[4px]'>
+        <div className='flex flex-col gap-[4px] animate__animated animate__fadeInUp'>
             <p className='text-[#DF632D] font-inter font-semibold text-[41px]'>Our Services</p>
             <p className='text-lg text-[#000] font-inter text-justify lg:w-[100%]'>
                 The demand for sustainable practices is rapidly increasing as businesses and governments recognise 
@@ -48,8 +48,8 @@ const Services = () => {
                 practices.
             </p>
         </div>
-        <img src={ServicesImg} alt='Services' className='mt-[82px] lg:w-[100%] ' /> {/* 1080px */}
-        <div className='w-full grid grid-cols-1 lg:grid-cols-2 gap-4 mt-[151px]'>
+        <img src={ServicesImg} alt='Services' className='mt-[82px] lg:w-[100%] animate__animated animate__fadeInRight' /> {/* 1080px */}
+        <div className='w-full grid grid-cols-1 lg:grid-cols-2 gap-4 mt-[151px] animate__animated animate__fadeInUp '>
           {
             ServicesItems.map((item, index) => (
               <div key={index} className='lg:w-[100%] lg:h-[145px] rounded-lg bg-[#3D5462] hover:bg-[#21A99D] p-6 flex flex-col gap-[5px]'>
@@ -60,7 +60,7 @@ const Services = () => {
           }
         </div>
         <div className='flex items-center justify-center mt-[165px] flex-col'>
-            <p className='lg:w-[736px] text-center font-medium font-inter text-3xl lg:text-[67px] lg:leading-[82px]'>
+            <p className='lg:w-[736px] text-center font-medium font-inter text-3xl lg:text-[67px] lg:leading-[82px] animate__animated animate__fadeInRight animate__delay-2s'>
                 Let’s Collaborate in building a better future
             </p>
             <div className='mt-[100px] mb-[165px]'>

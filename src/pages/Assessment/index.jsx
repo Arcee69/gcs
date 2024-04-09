@@ -117,7 +117,7 @@ const Assessment = () => {
 
   return (
     <div className='mt-32 w-full'>
-      <div className='flex flex-col gap-[4px] px-5 lg:px-[65px]'>
+      <div className='flex flex-col gap-[4px] px-5 lg:px-[65px] animate__animated animate__fadeInUp'>
         <p className='text-[#DF632D] font-inter font-semibold text-3xl lg:text-[41px]'>Sustainability Assessment</p>
         <p className='text-[22px] text-[#000] font-inter lg:w-[949px]'>
           Specialising in sustainability audits, strategic consultancy and capacity building programs, 
@@ -135,7 +135,7 @@ const Assessment = () => {
       <p className='text-center font-semibold text-[46px] mt-40'>The Sustainability Assessment Framework</p>
       <div className='flex flex-col gap-[74px] mt-[59px] px-5 lg:px-[65px]'>
         <Divider className='bg-[#E1E1E1]' />
-        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[63px]  lg:mx-auto '>
+        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[63px] animate__animated animate__fadeInUp lg:mx-auto '>
           {services.map((item, index) => (
             <div key={index} className='flex flex-col gap-[20px]'>
                 <img src={item?.img} className='w-[34px] h-[31px] xl:w-[47px] xl:h-[51px]' />
@@ -154,7 +154,7 @@ const Assessment = () => {
       </div>
       <Plans />
       <div className='flex items-center justify-center mt-[165px] flex-col'>
-        <p className='lg:w-[736px] text-center font-medium font-inter text-3xl lg:text-[67px] lg:leading-[82px]'>
+        <p className='lg:w-[736px] text-center font-medium font-inter text-3xl lg:text-[67px] lg:leading-[82px] animate__animated animate__fadeInRight animate__delay-2s'>
             Let’s Collaborate in building a better future
           </p>
             <div className='mt-[40px] lg:mt-[100px] mb-[385px]'>

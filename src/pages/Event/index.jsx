@@ -16,7 +16,7 @@ const Event = () => {
     <div className='mt-32 w-full'>
         <div className='flex flex-col gap-[55px] px-5 lg:pl-[60px]'>
             <p className='text-[#DF632D] font-inter ml-3 font-semibold text-[41px]'>Events</p>
-            <div className='flex flex-col lg:flex-row lg:items-center justify-between p-5 lg:px-[69px] lg:py-0 lg:w-[90%] md:h-[700px] lg:h-[487px] bg-[#F6FFF2]'> {/* 1109px */}
+            <div className='flex flex-col lg:flex-row lg:items-center justify-between p-5 lg:px-[69px] lg:py-0 lg:w-[90%] md:h-[700px] animate__animated animate__fadeInUp lg:h-[487px] bg-[#F6FFF2]'> {/* 1109px */}
                 <div className='flex flex-col gap-[13px]'>
                     <p className='lg:w-[236px] font-medium font-inter text-[23px] text-[#000]'>The Grand Launch by Andy Street CBE</p>
                     <p className='lg:w-[296px] font-bold font-inter text-[19px] text-[#000]'>Rt Hon. Mayor of West Midlands</p>
@@ -29,7 +29,7 @@ const Event = () => {
             </div>
         </div>
         <div className='flex items-center justify-center mt-[165px] flex-col'>
-            <p className='lg:w-[736px] text-center font-medium font-inter text-3xl lg:text-[67px] lg:leading-[82px]'>
+            <p className='lg:w-[736px] text-center font-medium font-inter text-3xl lg:text-[67px] lg:leading-[82px] animate__animated animate__fadeInRight  animate__delay-2s'>
                 Let’s Collaborate in building a better future
             </p>
             <div className='mt-[40px] lg:mt-[100px] mb-[385px]'>

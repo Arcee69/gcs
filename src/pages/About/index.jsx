@@ -15,8 +15,8 @@ const About = () => {
     <div className='w-full mt-32'>
       <div className='flex flex-col px-5 lg:px-[70px]'>
         <div className='flex flex-col lg:flex-row items-start gap-5 lg:gap-[150px]'>
-          <p className='text-[#DF632D] font-semibold font-inter text-[34px] lg:text-[41px]'>About Us</p>
-          <p className='font-inter font-medium text-lg lg:text-[22px] text-[#000] lg:w-[796px]'>
+          <p className='text-[#DF632D] font-semibold font-inter text-[34px] animate__animated animate__fadeInLeftBig lg:text-[41px]'>About Us</p>
+          <p className='font-inter font-medium text-lg lg:text-[22px] text-[#000] lg:w-[796px] animate__animated animate__fadeInRightBig'>
             The Global Centre of Excellence in Sustainability (GCS) is a leader in the 
             sustainability field, providing a wide range of services to help organisations 
             achieve their environmental and social goals. GCS offers services such as 
@@ -24,15 +24,15 @@ const About = () => {
             decarbonisation, and more. 
           </p>
         </div>
-        <img src={LongTrain} alt='long train' className='mt-14'/>
-        <div className='mt-24 flex flex-col gap-5'>
+        <img src={LongTrain} alt='long train' className='mt-14 animate__animated animate__fadeInUpBig '/>
+        <div className='mt-24 flex flex-col gap-5 animate__animated animate__fadeInUpBig '>
           <p className='font-inter text-[29px] font-medium text-[#DF632D] '>“ Our objectives include </p>
           <p className='lg:w-[854px] text-lg lg:text-[29px] font-inter font-medium'>
             Driving transformative change, inspiring action, and 
             contributing to the achievement of global sustainability goals.
           </p>
         </div>
-        <div className='mt-[58px] flex flex-col gap-5'>
+        <div className='mt-[58px] flex flex-col gap-5 animate__animated animate__fadeInUpBig animate__delay-2s '>
           <p className='font-inter text-[29px] font-medium text-[#DF632D] '>“ Our commitment</p>
           <p className='lg:w-[928px] text-lg lg:text-[29px] font-inter font-medium'>
             create a lasting positive impact on the planet and its 
@@ -50,7 +50,7 @@ const About = () => {
           <Divider className='bg-[#000]'/>
           <p className='font-inter text-[9px] font-bold'>GCS & ART</p>
         </div>
-        <div className='flex flex-col px-[20px] mt-[50px] '>
+        <div className='flex flex-col px-[20px] mt-[50px]  animate__animated animate__fadeInUpBig'>
           <div className='flex flex-col md:flex-row md:items-center md:gap-[29px]'>
             <img src={GCES} alt='GCES' className='w-[249px] rounded-xl' />
             <img src={Art} alt='ART' className='w-[249px] rounded-xl' />
@@ -74,7 +74,7 @@ const About = () => {
         </div>
         
         <div className='flex items-center justify-center mt-[104px] flex-col'>
-          <p className='lg:w-[736px] text-center font-medium font-inter text-3xl lg:text-[67px] lg:leading-[82px]'>
+          <p className='lg:w-[736px] text-center font-medium font-inter text-3xl lg:text-[67px] lg:leading-[82px] animate__animated animate__fadeInRight  animate__delay-2s'>
             Let’s Collaborate in building a better future
           </p>
           <div className='mt-[40px] lg:mt-[100px] mb-[290px]'>

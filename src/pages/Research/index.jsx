@@ -74,7 +74,7 @@ const Research = () => {
 
   return (
     <div className='mt-32'>
-      <div className='flex flex-col gap-[4px] px-5 lg:px-[140px]'>
+      <div className='flex flex-col gap-[4px] px-5 lg:px-[140px] animate__animated animate__fadeInUp'>
         <p className='text-[#DF632D] font-inter font-semibold text-[41px]'>Research</p>
         <p className='text-[22px] text-[#000] font-inter w-full'>
           At GCS we are teaming together with research institutions, government organisations, and universities. 
@@ -82,7 +82,7 @@ const Research = () => {
           technology. 
         </p>
       </div>
-      <div className='grid w-full gap-14 grid-cols-1 lg:grid-cols-3 px-5 lg:px-[140px] mt-[65px]'>
+      <div className='grid w-full gap-14 grid-cols-1 lg:grid-cols-3 px-5 lg:px-[140px] mt-[65px] animate__animated animate__fadeInUp'>
         {
           research.map((item, index) => (
             <div key={index} className='bg-[#3D5462] w-[100%] hover:bg-[#21A99D] cursor-pointer h-[290px] flex flex-col justify-between p-4' onClick={() => {navigate(item?.link); window.scroll(0, 0)}}>
@@ -96,7 +96,7 @@ const Research = () => {
         }
       </div>
       <div className='flex items-center justify-center mt-[165px] flex-col'>
-        <p className='lg:w-[736px] text-center font-medium font-inter text-3xl lg:text-[67px] lg:leading-[82px]'>
+        <p className='lg:w-[736px] text-center font-medium font-inter text-3xl lg:text-[67px] lg:leading-[82px] animate__animated animate__fadeInRight animate__delay-2s'>
             Let’s Collaborate in building a better future
         </p>
         <div className=' mt-[40px] lg:mt-[100px] mb-[385px]'>

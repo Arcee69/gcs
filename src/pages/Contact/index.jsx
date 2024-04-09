@@ -16,7 +16,7 @@ const Contact = () => {
   return (
     <div className='mt-32 px-5 lg:px-[62px] w-full'>
       <div className=' flex flex-col lg:flex-row items-start justify-between mt-[160px]'> {/* gap-[99px] */}
-        <div className='flex flex-col lg:gap-[283px] justify-between'>
+        <div className='flex flex-col lg:gap-[283px] justify-between animate__animated animate__fadeInLeftBig '>
           <div className='flex flex-col gap-[8px]'>
               <p className='font-inter font-semibold text-3xl lg:text-[50px]'>Contact Us</p>
               <p className='text-[#19373E] text-[20px] lg:text-[24px] font-inter font-medium'>Fill out the form and we will get in touch</p>
@@ -26,7 +26,7 @@ const Contact = () => {
               <p className='text-[#19373E] text-[22px] font-inter font-semibold'>Info@gce-sustainability.com</p>
           </div>
         </div>
-          <div className='w-full mt-5 lg:mt-0 lg:w-auto'>
+          <div className='w-full mt-5 lg:mt-0 lg:w-auto animate__animated animate__fadeInRightBig '>
               <Formik
                   initialValues={{
                       firstName: "",
@@ -151,11 +151,11 @@ const Contact = () => {
       </div>
 
       <div className='flex flex-col lg:flex-row items-start justify-between mt-[127px] mb-[194px]'> {/* gap-[99px] */}
-        <div className='flex flex-col gap-[8px] w-full lg:w-[451px]'>
+        <div className='flex flex-col gap-[8px] w-full lg:w-[451px] animate__animated animate__fadeInLeftBig '>
             <p className='font-inter font-semibold text-3xl lg:text-[44px]'>Become a member</p>
             <p className='text-[#19373E] text-xl lg:text-[24px] font-inter font-medium'>Join our growing community</p>
         </div>
-        <div className='w-full mt-5 lg:mt-0 lg:w-auto'>
+        <div className='w-full mt-5 lg:mt-0 lg:w-auto animate__animated animate__fadeInRightBig  animate__delay-2s'>
             <Formik
                 initialValues={{
                     firstName: "",
