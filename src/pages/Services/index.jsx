@@ -52,7 +52,7 @@ const Services = () => {
         <div className='w-full grid grid-cols-2 gap-4 mt-[151px]'>
           {
             ServicesItems.map((item, index) => (
-              <div key={index} className='w-[90%] h-[145px] rounded-lg bg-[#10614E] p-6 flex flex-col gap-[5px]'>
+              <div key={index} className='w-[95%] h-[145px] rounded-lg bg-[#10614E] px-3 py-6 flex flex-col gap-[5px]'>
                 <p className='text-[#fff] font-inter font-semibold text-[22px]'>{item?.title}</p>
                 <p className='text-[#fff] text-base font-inter'>{item?.subtitle}</p>
               </div>

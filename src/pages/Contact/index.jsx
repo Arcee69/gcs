@@ -15,7 +15,7 @@ const Contact = () => {
 
   return (
     <div className='mt-32 px-[62px] w-full'>
-      <div className='flex items-start gap-[99px] mt-[160px]'>
+      <div className='flex items-start justify-between mt-[160px]'> {/* gap-[99px] */}
         <div className='flex flex-col gap-[283px] justify-between'>
           <div className='flex flex-col gap-[8px]'>
               <p className='font-inter font-semibold text-[50px]'>Contact Us</p>
@@ -150,7 +150,7 @@ const Contact = () => {
           </div>
       </div>
 
-      <div className='flex items-start gap-[99px] mt-[127px] mb-[194px]'>
+      <div className='flex items-start justify-between mt-[127px] mb-[194px]'> {/* gap-[99px] */}
         <div className='flex flex-col gap-[8px] w-[451px]'>
             <p className='font-inter font-semibold text-[44px]'>Become a member</p>
             <p className='text-[#19373E] text-[24px] font-inter font-medium'>Join our growing community</p>
