@@ -14,8 +14,8 @@ const Event = () => {
 
   return (
     <div className='mt-32 w-full'>
-        <div className='flex flex-col gap-[55px] pl-[95px]'>
-            <p className='text-[#DF632D] font-inter font-semibold text-[41px]'>Events</p>
+        <div className='flex flex-col gap-[55px] pl-[60px]'>
+            <p className='text-[#DF632D] font-inter ml-3 font-semibold text-[41px]'>Events</p>
             <div className='flex items-center justify-between px-[69px] w-[90%] h-[487px] bg-[#F6FFF2]'> {/* 1109px */}
                 <div className='flex flex-col gap-[13px]'>
                     <p className='w-[236px] font-medium font-inter text-[23px] text-[#000]'>The Grand Launch by Andy Street CBE</p>

@@ -16,6 +16,12 @@ import Banner from "../../assets/png/banner.png"
 import Bulb from "../../assets/svg/bulb.svg"
 import Cursor from "../../assets/svg/cursor.svg"
 import Aim from "../../assets/svg/aim.svg"
+import Art from "../../assets/svg/art_logo.svg"
+import Cesvit from "../../assets/svg/cesvit.svg"
+import Transport from "../../assets/svg/transport.svg"
+import Uon from "../../assets/svg/uon.svg"
+import Warwick from "../../assets/svg/warwick.svg"
+import West from "../../assets/svg/west_midlands.svg"
 
 const Home = () => {
 
@@ -87,7 +93,17 @@ const Home = () => {
           <div></div>
         </div>
       </div>
-      <img src={Banner} alt='banner' className='mx-auto w-[80%]'/>
+
+      <div className='mx-auto w-[70%] flex justify-between items-center'>
+        <img src={Art} alt='Art'/>
+        <img src={Cesvit} alt='Cesvit'/>
+        <img src={Transport} alt='Transport'/>
+        <img src={Uon} alt='uon'/>
+        <img src={Warwick} alt='warwick'/>
+        <img src={West} alt='west'/>
+
+      </div>
+      
       <div className='relative mt-[35px] flex justify-between px-[130px] '>
         <div className='flex flex-col w-[505px] gap-[36px]'>
           <div className='flex flex-col gap-[9px]'>
@@ -182,9 +198,9 @@ const Home = () => {
           <Divider className='bg-[#000]'/>
           <p className='font-inter text-[9px] font-bold'>GCS SERVICES</p>
         </div>
-        <div className='px-[20px] mt-[82px] flex flex-col gap-[14px]'>
+        <div className='px-[25px] mt-[82px] flex flex-col gap-[14px]'>
           <p className='font-inter font-semibold text-[38px] text-BLACK-_100'>Our Services</p>
-          <p className='font-inter text-lg text-BLACK-_100'>
+          <p className='font-inter text-lg text-BLACK-_100 text-justify'>
             The demand for sustainable practices is rapidly increasing as businesses and governments recognise the urgency of addressing 
             environmental and social issues. GCS operates within a growing market where organisations seek expertise and resources to 
             transition towards more sustainable operations. Our services are designed to meet this growing demand and drive meaningful 

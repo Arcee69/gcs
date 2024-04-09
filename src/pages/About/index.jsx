@@ -13,8 +13,8 @@ const About = () => {
 
   return (
     <div className='w-full mt-32'>
-      <div className='flex flex-col px-[100px]'>
-        <div className='flex gap-[90px]'>
+      <div className='flex flex-col px-[70px]'>
+        <div className='flex items-start gap-[150px]'>
           <p className='text-[#DF632D] font-semibold font-inter text-[41px]'>About Us</p>
           <p className='font-inter font-medium text-[22px] text-[#000] w-[796px]'>
             The Global Centre of Excellence in Sustainability (GCS) is a leader in the 

@@ -37,10 +37,10 @@ const Services = () => {
 
       
   return (
-    <div className='mt-32 px-[70px]'>
+    <div className='mt-32 px-[60px]'>
         <div className='flex flex-col gap-[4px]'>
             <p className='text-[#DF632D] font-inter font-semibold text-[41px]'>Our Services</p>
-            <p className='text-lg text-[#000] font-inter w-[1094px]'>
+            <p className='text-lg text-[#000] font-inter text-justify w-[1140px]'>
                 The demand for sustainable practices is rapidly increasing as businesses and governments recognise 
                 the urgency of addressing environmental and social issues. GCS operates within a growing market 
                 where organisations seek expertise and resources to transition towards more sustainable operations. 
@@ -48,13 +48,13 @@ const Services = () => {
                 practices.
             </p>
         </div>
-        <img src={ServicesImg} alt='Services' className='mt-[82px] w-[90%] mx-auto' /> {/* 1080px */}
-        <div className='w-full grid grid-cols-2 gap-6 mt-[151px]'>
+        <img src={ServicesImg} alt='Services' className='mt-[82px] w-[92%] ' /> {/* 1080px */}
+        <div className='w-full grid grid-cols-2 gap-4 mt-[151px]'>
           {
             ServicesItems.map((item, index) => (
-              <div key={index} className='w-full h-[145px] rounded-lg bg-[#10614E] p-6 flex flex-col gap-[5px]'>
+              <div key={index} className='w-[90%] h-[145px] rounded-lg bg-[#10614E] p-6 flex flex-col gap-[5px]'>
                 <p className='text-[#fff] font-inter font-semibold text-[22px]'>{item?.title}</p>
-                <p className='text-[#fff] text-lg font-inter'>{item?.subtitle}</p>
+                <p className='text-[#fff] text-base font-inter'>{item?.subtitle}</p>
               </div>
             ))
           }
