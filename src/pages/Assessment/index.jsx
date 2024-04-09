@@ -3,7 +3,7 @@ import { Divider } from '@mui/material'
 import { Form,Formik } from 'formik';
 import { CgSpinner } from 'react-icons/cg';
 
-import Sustainability from "../../assets/png/sustainability.png"
+import Sustainability from "../../assets/vid/vid_1.mp4"
 
 import AirEmission from "../../assets/svg/air_emission.svg";
 import Waste from "../../assets/svg/waste.svg";
@@ -124,7 +124,14 @@ const Assessment = () => {
           GCS aligns organisations with the global sustainable development goals
         </p>
       </div>
-      <img src={Sustainability} alt='Sustainability-Assessment' className='mt-[82px] w-[90%] mx-auto' /> {/* w-[1080px] */}
+      <video
+        autoPlay
+        loop
+        className='mt-[82px] w-[90%] mx-auto'
+      >
+        <source src={Sustainability} type="video/mp4" ></source>
+      </video>
+      {/* <img src={Sustainability} alt='Sustainability-Assessment' className='mt-[82px] w-[90%] mx-auto' /> w-[1080px] */}
       <p className='text-center font-semibold text-[46px] mt-40'>The Sustainability Assessment Framework</p>
       <div className='flex flex-col gap-[74px] mt-[59px] px-[65px]'>
         <Divider className='bg-[#E1E1E1]' />

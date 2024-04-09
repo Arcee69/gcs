@@ -76,7 +76,7 @@ const Research = () => {
     <div className='mt-32'>
       <div className='flex flex-col gap-[4px] px-[140px]'>
         <p className='text-[#DF632D] font-inter font-semibold text-[41px]'>Research</p>
-        <p className='text-[22px] text-[#000] font-inter w-[1074px]'>
+        <p className='text-[22px] text-[#000] font-inter w-full'>
           At GCS we are teaming together with research institutions, government organisations, and universities. 
           Collaborating with professionals in the field can accelerate research and provide access to innovative 
           technology. 
@@ -85,7 +85,7 @@ const Research = () => {
       <div className='grid w-full gap-14 grid-cols-3 px-[140px] mt-[65px]'>
         {
           research.map((item, index) => (
-            <div key={index} className='bg-[#3D5462] w-[90%] hover:bg-[#21A99D] cursor-pointer h-[290px] flex flex-col justify-between p-4' onClick={() => {navigate(item?.link); window.scroll(0, 0)}}>
+            <div key={index} className='bg-[#3D5462] w-[100%] hover:bg-[#21A99D] cursor-pointer h-[290px] flex flex-col justify-between p-4' onClick={() => {navigate(item?.link); window.scroll(0, 0)}}>
               <div className='flex items-start justify-between '>
                 <p className='font-inter font-medium text-[#fff] text-[30px]'>{item?.title}</p>
                 <img src={item?.arrow} alt='arrow-up'/>

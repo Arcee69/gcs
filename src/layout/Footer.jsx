@@ -16,8 +16,8 @@ const Footer = () => {
     const navigate = useNavigate()
 
   return (
-    <div className='w-full bg-[#D9D9D9] flex justify-between pl-[102px] pt-[53px] pr-[76px] pb-[29px]'>
-        <div className='flex gap-[77px]'>
+    <div className='w-full bg-[#D9D9D9] flex flex-col lg:flex-row justify-between px-5 lg:pl-[102px] pt-[53px]  md:pr-[76px] pb-[29px]'>
+        <div className='flex flex-col lg:flex-row gap-[77px]'>
             <div className='flex flex-col gap-[17px]'>
                 <p className='text-[#5B5B5B] cursor-pointer hover:text-[#5A5A5A] hover:font-medium font-inter text-[15px]' onClick={() => {navigate("/research/green-hydrogen"); window.scrollTo(0, 0)}}>Green Hydrogen</p>
                 <p className='text-[#5B5B5B] cursor-pointer hover:text-[#5A5A5A] hover:font-medium font-inter text-[15px]' onClick={() => {navigate("/research/tech"); window.scrollTo(0, 0)}}>AI tech for carbon reduction</p>
@@ -37,7 +37,7 @@ const Footer = () => {
             </div>
         </div>
 
-        <div className='flex flex-col'>
+        <div className='flex flex-col mt-10 lg:mt-0'>
             <p className='font-inter text-[#565656] font-semibold text-[30px]'>Subscribe</p>
             <p className='font-inter text-xl text-[#616161]'>Sign up for newsletter</p>
             <input 

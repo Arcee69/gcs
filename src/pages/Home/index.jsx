@@ -67,7 +67,7 @@ const Home = () => {
         className='w-full h-[587px] '
       >
         <div
-          className='pt-[126px] pb-[107px] pl-[149px] flex items-center' 
+          className='pt-[126px] pb-[107px] px-5 lg:pl-[149px] lg:pr-0 flex items-center' 
           style={{
             backgroundColor: "rgba(0, 0, 0, 0.5)",
             position: "absolute",
@@ -78,8 +78,8 @@ const Home = () => {
           }}
         >
           <div className='flex flex-col gap-[32px]'>
-            <div className='flex flex-col gap-[9px] w-[417px]'>
-              <p className='font-bold text-WHITE-_100 font-inter text-[51px] leading-[68px]'>Global Centre of Excellence in Sustainability</p>
+            <div className='flex flex-col gap-[9px] w-full lg:w-[417px]'>
+              <p className='font-bold text-WHITE-_100 font-inter text-4xl lg:text-[51px] lg:leading-[68px]'>Global Centre of Excellence in Sustainability</p>
               <p className='font-medium font-inter text-[17px] text-[#fff]'>
                 Receive expert support in evaluating, measuring, and embedding sustainability into your company
               </p>
@@ -94,24 +94,33 @@ const Home = () => {
         </div>
       </div>
 
-      <div className='mx-auto w-[70%] flex justify-between items-center'>
-        <img src={Art} alt='Art'/>
-        <img src={Cesvit} alt='Cesvit'/>
+      <div className='mx-auto w-[70%] hidden lg:flex justify-between items-center'>
+        <img src={Art} alt='Art' />
+        <img src={Cesvit} alt='Cesvit' />
         <img src={Transport} alt='Transport'/>
         <img src={Uon} alt='uon'/>
-        <img src={Warwick} alt='warwick'/>
-        <img src={West} alt='west'/>
+        <img src={Warwick} alt='warwick' />
+        <img src={West} alt='west' />
 
       </div>
       
-      <div className='relative mt-[35px] flex justify-between px-[130px] '>
-        <div className='flex flex-col w-[505px] gap-[36px]'>
+      <div className='relative mt-[35px] flex flex-col lg:flex-row justify-between px-5 lg:px-[130px] '>
+
+        <div className='flex flex-col items-center justify-center relative lg:hidden'>
+          <div className='bg-[#02A396] w-[243px] h-[125px] rounded-[171px]'></div>
+          <div className='flex absolute top-[43px] right-[37px] md:right-[200px]'>
+            <div className='bg-[#FFDECD] w-[243px] h-[390px] rounded-[171px]'></div>
+            <img src={Stroller} alt='Stroller' className='rounded-[171px] absolute top-[10px] left-[37px]' />
+          </div>
+        </div>
+
+        <div className='flex flex-col mt-96 lg:mt-0 lg:w-[505px] gap-[36px]'>
           <div className='flex flex-col gap-[9px]'>
             <div className='flex items-center gap-4'>
               <img src={Bulb} alt='icon' />
               <p className='text-[#DF632D] font-bold text-[26px] '>Our Vision</p>
             </div>
-            <p className='font-inter text-[#000] font-medium text-lg w-[417px]'>
+            <p className='font-inter text-[#000] font-medium text-lg lg:w-[417px]'>
               To be a global leader in advancing sustainability practices, 
               inspiring transformative change for a better world. 
             </p>
@@ -123,7 +132,7 @@ const Home = () => {
               <img src={Cursor} alt='icon' />
               <p className='text-[#DF632D] font-bold text-[26px] '>Mission</p>
             </div>
-            <p className='font-inter text-[#000] font-medium text-lg w-[514px]'>
+            <p className='font-inter text-[#000] font-medium text-lg lg:w-[514px]'>
               We champion sustainability by driving innovation, research, 
               and collaboration. We empower industries, governments, 
               and communities to embrace and implement sustainable 
@@ -137,7 +146,7 @@ const Home = () => {
               <img src={Aim} alt='icon' />
               <p className='text-[#DF632D] font-bold text-[26px] '>Aims</p>
             </div>
-            <p className='font-inter text-[#000] font-medium text-lg w-[491px]'>
+            <p className='font-inter text-[#000] font-medium text-lg lg:w-[491px]'>
               World-leading hub of knowledge advancing sustainable practices 
               and solutions across various sectors.
             </p>
@@ -145,7 +154,7 @@ const Home = () => {
           </div>
         </div>
 
-        <div className='flex flex-col relative'>
+        <div className='hidden lg:flex flex-col relative '>
           <div className='bg-[#02A396] w-[343px] h-[225px] rounded-[171px]'></div>
           <div className='flex absolute top-[43px] right-[37px]'>
             <div className='bg-[#FFDECD] w-[343px] h-[537px] rounded-[171px]'></div>
@@ -155,28 +164,28 @@ const Home = () => {
       </div>
 
       <div className='mt-[160px]  flex flex-col'>
-        <div className='px-[70px]'>
+        <div className='px-5 lg:px-[70px]'>
           <div className='flex flex-col'>
             <Divider className='bg-[#000]'/>
             <p className='font-inter text-[9px] font-bold'>GCS LAUNCH 2023</p>
           </div>
-          <p className='text-[#141414] w-[556px] leading-[82px] font-inter font-bold text-[104px] mx-auto text-center mt-[66px]'>
+          <p className='text-[#141414] lg:w-[556px] text-4xl lg:leading-[82px] font-inter font-bold lg:text-[104px] mx-auto text-center mt-[66px]'>
             The Grand Launch
           </p>
         </div>
         <div className='relative mt-5'>
-          <div className='flex gap-14 '>
-            <img src={FirstLauch} alt='FirstLauch' className='w-[443px] left-0' />
-            <img src={SecondLauch} alt='SecondLauch' className='w-[543px]'/>
-            <img src={ThirdLauch} alt='ThirdLauch' className='w-[443px] right-0' />
+          <div className='flex flex-col items-center lg:flex-row gap-14 '>
+            <img src={FirstLauch} alt='FirstLauch' className='md:w-[443px] left-0' />
+            <img src={SecondLauch} alt='SecondLauch' className='md:w-[543px]'/>
+            <img src={ThirdLauch} alt='ThirdLauch' className=' md:w-[443px] right-0' />
           </div>
-          <div className='flex justify-between'>
-            <img src={FourthLauch} alt='FourthLauch' className='w-[443px] relative -top-14 -z-10 left-44' />
-            <img src={FifthLauch} alt='FifthLauch' className='w-[443px] relative -top-24 right-8' />
+          <div className='flex flex-col md:flex-row justify-between'>
+            <img src={FourthLauch} alt='FourthLauch' className='w-[443px] relative lg:-top-14 lg:-z-10 lg:left-44' />
+            <img src={FifthLauch} alt='FifthLauch' className='w-[443px] relative lg:-top-24 lg:right-8' />
           </div>
         </div>
 
-        <div className='flex flex-col items-center justify-center gap-[44px] px-[70px]'>
+        <div className='flex flex-col items-center justify-center gap-[44px] px-5 mt-10 lg:mt-0 lg:px-[70px]'>
           <p className='font-inter text-[13px] text-center '>
             The event was attended by representatives from Transport for West Midlands, UKTram, West Midlands Combined 
             Authority, Railway Industry Association, Colas Rail, Arup, Siemens, EY, Egis, SYSTRA, Frazer-Nash 
@@ -193,12 +202,12 @@ const Home = () => {
         </div>
       </div>
 
-      <div className='mt-[104px] flex flex-col px-[70px]'>
+      <div className='mt-[104px] flex flex-col px-5 lg:px-[70px]'>
         <div className='flex flex-col'>
           <Divider className='bg-[#000]'/>
           <p className='font-inter text-[9px] font-bold'>GCS SERVICES</p>
         </div>
-        <div className='px-[25px] mt-[82px] flex flex-col gap-[14px]'>
+        <div className='lg:px-[25px] mt-[82px] flex flex-col gap-[14px]'>
           <p className='font-inter font-semibold text-[38px] text-BLACK-_100'>Our Services</p>
           <p className='font-inter text-lg text-BLACK-_100 text-justify'>
             The demand for sustainable practices is rapidly increasing as businesses and governments recognise the urgency of addressing 
@@ -207,10 +216,10 @@ const Home = () => {
             change in sustainability practices.
           </p>
         </div>
-        <div className='w-full grid grid-cols-2 gap-6 mt-[59px]'>
+        <div className='w-full grid grid-cols-1 lg:grid-cols-2 gap-6 mt-[59px]'>
           {
             Services.map((item, index) => (
-              <div key={index} className='w-full h-[145px] rounded-lg bg-[#10614E] p-6 flex flex-col gap-[5px]'>
+              <div key={index} className='w-full h-[200px] md:h-[145px] rounded-lg bg-[#3D5462] hover:bg-[#21A99D] p-6 flex flex-col gap-[5px]'>
                 <p className='text-[#fff] font-inter font-semibold text-[22px]'>{item?.title}</p>
                 <p className='text-[#fff] text-lg font-inter'>{item?.subtitle}</p>
               </div>
@@ -219,14 +228,14 @@ const Home = () => {
         </div>
       </div>
 
-      <div className='mt-[120px] flex flex-col px-[70px]'>
+      <div className='mt-[120px] flex flex-col px-5 lg:px-[70px]'>
         <div className='flex flex-col'>
           <Divider className='bg-[#000]'/>
           <p className='font-inter text-[9px] font-bold'>GCS SERVICES</p>
         </div>
         
         <div className='flex items-center justify-center mt-[104px] flex-col'>
-          <p className='w-[736px] text-center font-medium font-inter text-[67px] leading-[82px]'>
+          <p className='lg:w-[736px] text-center font-medium font-inter text-3xl lg:text-[67px] lg:leading-[82px]'>
             Let’s Collaborate in building a better future
           </p>
           <div className='mt-[100px] mb-[240px]'>
@@ -260,55 +269,55 @@ const Home = () => {
                       <div className="flex flex-col gap-[21px]">
                           <p className='text-[#19373E] font-inter font-medium text-[24px] text-center'>Join our growing community</p>
                           
-                          <div className='flex items-center gap-[35px]'>
-                            <div className='flex flex-col gap-2 w-[276px]'>
+                          <div className='flex flex-col md:flex-row items-center gap-[35px]'>
+                            <div className='flex flex-col gap-2 w-full md:w-[276px]'>
                               <input 
                                 name="firstName"
                                 placeholder="First Name"
                                 type='text'
                                 onChange={handleChange}
-                                className='w-[276px] h-[58px] outline-none border border-[#8F8F8F] p-2.5'
+                                className='w-full md:w-[276px] h-[58px] outline-none border border-[#8F8F8F] p-2.5'
                               />
                             </div>
-                            <div className='flex flex-col gap-2 w-[276px]'>
+                            <div className='flex flex-col gap-2 w-full md:w-[276px]'>
                               <input 
                                 name="lastName"
                                 placeholder="Last Name"
                                 type='text'
                                 onChange={handleChange}
-                                className='w-[276px] h-[58px] outline-none border border-[#8F8F8F] p-2.5'
+                                className='w-full md:w-[276px] h-[58px] outline-none border border-[#8F8F8F] p-2.5'
                               />
                             </div>
 
                           </div>
 
-                          <div className='w-[587px] flex flex-col gap-2'>
+                          <div className='w-full md:w-[587px] flex flex-col gap-2'>
                             <input 
                               name="companyName"
                               placeholder="Company Name"
                               type='text'
                               onChange={handleChange}
-                              className='w-[587px] h-[58px] outline-none border border-[#8F8F8F] p-2.5'
+                              className='w-full lg:w-[587px] h-[58px] outline-none border border-[#8F8F8F] p-2.5'
                             />
                           </div>
 
-                          <div className='w-[587px] flex flex-col gap-2'>
+                          <div className='w-full md:w-[587px] flex flex-col gap-2'>
                             <input 
                               name="workEmail"
                               placeholder="Work Email"
                               type='text'
                               onChange={handleChange}
-                              className='w-[587px] h-[58px] outline-none border border-[#8F8F8F] p-2.5'
+                              className='w-full md:w-[587px] h-[58px] outline-none border border-[#8F8F8F] p-2.5'
                             />
                           </div>
 
-                          <div className='w-[587px] flex flex-col gap-2'>
+                          <div className='w-full md:w-[587px] flex flex-col gap-2'>
                             <input 
                               name="country"
                               placeholder="Country"
                               type='text'
                               onChange={handleChange}
-                              className='w-[587px] h-[58px] outline-none border border-[#8F8F8F] p-2.5'
+                              className='w-full md:w-[587px] h-[58px] outline-none border border-[#8F8F8F] p-2.5'
                             />
                           </div>
 

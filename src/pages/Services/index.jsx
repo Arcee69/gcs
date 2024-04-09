@@ -37,10 +37,10 @@ const Services = () => {
 
       
   return (
-    <div className='mt-32 px-[60px]'>
+    <div className='mt-32 px-5 lg:px-[60px]'>
         <div className='flex flex-col gap-[4px]'>
             <p className='text-[#DF632D] font-inter font-semibold text-[41px]'>Our Services</p>
-            <p className='text-lg text-[#000] font-inter text-justify w-[1140px]'>
+            <p className='text-lg text-[#000] font-inter text-justify lg:w-[100%]'>
                 The demand for sustainable practices is rapidly increasing as businesses and governments recognise 
                 the urgency of addressing environmental and social issues. GCS operates within a growing market 
                 where organisations seek expertise and resources to transition towards more sustainable operations. 
@@ -48,11 +48,11 @@ const Services = () => {
                 practices.
             </p>
         </div>
-        <img src={ServicesImg} alt='Services' className='mt-[82px] w-[92%] ' /> {/* 1080px */}
-        <div className='w-full grid grid-cols-2 gap-4 mt-[151px]'>
+        <img src={ServicesImg} alt='Services' className='mt-[82px] lg:w-[100%] ' /> {/* 1080px */}
+        <div className='w-full grid grid-cols-1 lg:grid-cols-2 gap-4 mt-[151px]'>
           {
             ServicesItems.map((item, index) => (
-              <div key={index} className='w-[95%] h-[145px] rounded-lg bg-[#10614E] px-3 py-6 flex flex-col gap-[5px]'>
+              <div key={index} className='lg:w-[100%] lg:h-[145px] rounded-lg bg-[#3D5462] hover:bg-[#21A99D] p-6 flex flex-col gap-[5px]'>
                 <p className='text-[#fff] font-inter font-semibold text-[22px]'>{item?.title}</p>
                 <p className='text-[#fff] text-base font-inter'>{item?.subtitle}</p>
               </div>
@@ -60,7 +60,7 @@ const Services = () => {
           }
         </div>
         <div className='flex items-center justify-center mt-[165px] flex-col'>
-            <p className='w-[736px] text-center font-medium font-inter text-[67px] leading-[82px]'>
+            <p className='lg:w-[736px] text-center font-medium font-inter text-3xl text-[67px] lg:leading-[82px]'>
                 Let’s Collaborate in building a better future
             </p>
             <div className='mt-[100px] mb-[980px]'>
@@ -90,73 +90,73 @@ const Services = () => {
                     // setFieldTouched,
                     values,
                 }) => (
-                    <Form onSubmit={handleSubmit} className="flex ">
-                        <div className="flex flex-col gap-[21px]">
-                            <p className='text-[#19373E] font-inter font-medium text-[24px] text-center'>Join our growing community</p>
-                            
-                            <div className='flex items-center gap-[35px]'>
-                                <div className='flex flex-col gap-2 w-[276px]'>
-                                <input 
-                                    name="firstName"
-                                    placeholder="First Name"
-                                    type='text'
-                                    onChange={handleChange}
-                                    className='w-[276px] h-[58px] outline-none border border-[#8F8F8F] p-2.5'
-                                />
-                                </div>
-                                <div className='flex flex-col gap-2 w-[276px]'>
-                                <input 
-                                    name="lastName"
-                                    placeholder="Last Name"
-                                    type='text'
-                                    onChange={handleChange}
-                                    className='w-[276px] h-[58px] outline-none border border-[#8F8F8F] p-2.5'
-                                />
-                                </div>
+                  <Form onSubmit={handleSubmit} className="flex ">
+                  <div className="flex flex-col gap-[21px]">
+                      <p className='text-[#19373E] font-inter font-medium text-[24px] text-center'>Join our growing community</p>
+                      
+                      <div className='flex flex-col md:flex-row items-center gap-[35px]'>
+                          <div className='flex flex-col gap-2  w-full md:w-[276px]'>
+                          <input 
+                              name="firstName"
+                              placeholder="First Name"
+                              type='text'
+                              onChange={handleChange}
+                              className=' w-full md:w-[276px] h-[58px] outline-none  border border-[#8F8F8F] p-2.5'
+                          />
+                          </div>
+                          <div className='flex flex-col gap-2  w-full md:w-[276px]'>
+                          <input 
+                              name="lastName"
+                              placeholder="Last Name"
+                              type='text'
+                              onChange={handleChange}
+                              className=' w-full md:w-[276px] h-[58px] outline-none border border-[#8F8F8F] p-2.5'
+                          />
+                          </div>
 
-                            </div>
+                      </div>
 
-                            <div className='w-[587px] flex flex-col gap-2'>
-                                <input 
-                                name="companyName"
-                                placeholder="Company Name"
-                                type='text'
-                                onChange={handleChange}
-                                className='w-[587px] h-[58px] outline-none border border-[#8F8F8F] p-2.5'
-                                />
-                            </div>
+                      <div className=' w-full md:w-[587px] flex flex-col gap-2'>
+                          <input 
+                          name="companyName"
+                          placeholder="Company Name"
+                          type='text'
+                          onChange={handleChange}
+                          className=' w-full md:w-[587px] h-[58px] outline-none  border border-[#8F8F8F] p-2.5'
+                          />
+                      </div>
 
-                            <div className='w-[587px] flex flex-col gap-2'>
-                                <input 
-                                name="workEmail"
-                                placeholder="Work Email"
-                                type='text'
-                                onChange={handleChange}
-                                className='w-[587px] h-[58px] outline-none border border-[#8F8F8F] p-2.5'
-                                />
-                            </div>
+                      <div className=' w-full md:w-[587px] flex flex-col gap-2'>
+                          <input 
+                          name="workEmail"
+                          placeholder="Work Email"
+                          type='text'
+                          onChange={handleChange}
+                          className=' w-full md:w-[587px] h-[58px] outline-none border border-[#8F8F8F] p-2.5'
+                          />
+                      </div>
 
-                            <div className='w-[587px] flex flex-col gap-2'>
-                                <input 
-                                name="country"
-                                placeholder="Country"
-                                type='text'
-                                onChange={handleChange}
-                                className='w-[587px] h-[58px] outline-none border border-[#8F8F8F] p-2.5'
-                                />
-                            </div>
+                      <div className='w-full md:w-[587px] flex flex-col gap-2'>
+                          <input 
+                          name="country"
+                          placeholder="Country"
+                          type='text'
+                          onChange={handleChange}
+                          className='w-full md:w-[587px] h-[58px] outline-none  border border-[#8F8F8F] p-2.5'
+                          />
+                      </div>
 
-                            <button
-                                className="w-[129px] font-inter flex items-center justify-center mt-[26px] h-[46px] bg-[#000] text-lg rounded text-center"
-                                type="submit"
-                                disabled={loading}
-                            >
-                                <p className='text-WHITE-_100 text-sm font-semibold'>{loading ? <CgSpinner className=" animate-spin text-xl " /> : 'Submit'}</p>
-                                
-                            </button>
-                        </div>
+                      <button
+                          className="w-[129px] font-inter flex items-center justify-center mt-[26px] h-[46px] bg-[#000] text-lg rounded text-center"
+                          type="submit"
+                          disabled={loading}
+                      >
+                          <p className='text-WHITE-_100 text-sm font-semibold'>{loading ? <CgSpinner className=" animate-spin text-xl " /> : 'Submit'}</p>
+                          
+                      </button>
+                  </div>
 
-                    </Form>
+              </Form>
                 )}
 
                 </Formik>
