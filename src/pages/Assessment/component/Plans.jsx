@@ -11,12 +11,12 @@ export default function Plans() {
     const navigate = useNavigate();
 
     return (
-        <div className='plans flex flex-col pt-[74px] mt-[160px] gap-[66px]'>
-            <p className='text-center text-[#fff] font-kumbh text-[45px]'>Discover Our Sustainability Assessment Tool </p>
+        <div className='plans flex flex-col pt-[74px] mt-[160px] gap-[66px] overflow-hidden '>
+            <p className='text-center text-[#fff] font-kumbh text-4xl lg:text-[45px]'>Discover Our Sustainability Assessment Tool </p>
             <div 
-                className='flex w-[100%]  pr-[8.7%] pl-[12.8%] '
+                className='flex w-[100%]  pr-[8.7%] px-5 lg:pl-[12.8%] '
             >
-                <div className='flex md:w-[20%] lg:w-[40%] xl:w-[50%]'>
+                <div className='hidden lg:flex md:w-[20%] lg:w-[40%] xl:w-[50%]'>
                     <div className='-left-56 mt-[12%] flex z-40 absolute h-[573px]'> {/* w-[572px] */}
                         <img src={Intro} alt='' className='w-full h-full object-contain brightness-50'/>
                     </div>
@@ -25,7 +25,7 @@ export default function Plans() {
 
                     </div>
                 </div>
-                <div className='flex-1  w-[50%] '>
+                <div className='flex-1  lg:w-[50%] '>
                     <div className='md:ml-[20%] lg:ml-[10%] xl:ml-8'>
                         <h1 className='text-[25px] xl:text-[35px] font-semibold text-white font-hanken'>Scope 1,2 and 3</h1>
                         <h2 className='text-xs xl:text-[15px] text-[#AEAEAE] font-Kumbh'>Understand your company’s sustainability
@@ -34,7 +34,7 @@ export default function Plans() {
                     </div>
                     <div className='mt-[42px] md:ml-[25%] lg:ml-[15%] xl:ml-0'>
                         <div className='flex gap-[15px]'>
-                            <div className='xl:flex md:hidden items-center h-[52px]'>
+                            <div className='hidden lg:flex items-center h-[52px]'>
                                 <Dot />
                             </div>
                             <div>

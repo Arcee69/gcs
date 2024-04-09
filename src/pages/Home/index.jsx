@@ -175,12 +175,12 @@ const Home = () => {
         </div>
         <div className='relative mt-5'>
           <div className='flex flex-col items-center lg:flex-row gap-14 '>
-            <img src={FirstLauch} alt='FirstLauch' className='md:w-[443px] left-0' />
+            <img src={FirstLauch} alt='FirstLauch' className=' hidden lg:block md:w-[443px] left-0' />
             <img src={SecondLauch} alt='SecondLauch' className='md:w-[543px]'/>
-            <img src={ThirdLauch} alt='ThirdLauch' className=' md:w-[443px] right-0' />
+            <img src={ThirdLauch} alt='ThirdLauch' className=' hidden lg:block md:w-[443px] right-0' />
           </div>
-          <div className='flex flex-col md:flex-row justify-between'>
-            <img src={FourthLauch} alt='FourthLauch' className='w-[443px] relative lg:-top-14 lg:-z-10 lg:left-44' />
+          <div className='hidden lg:flex flex-col md:flex-row justify-between'>
+            <img src={FourthLauch} alt='FourthLauch' className=' w-[443px] relative lg:-top-14 lg:-z-10 lg:left-44' />
             <img src={FifthLauch} alt='FifthLauch' className='w-[443px] relative lg:-top-24 lg:right-8' />
           </div>
         </div>
@@ -238,7 +238,7 @@ const Home = () => {
           <p className='lg:w-[736px] text-center font-medium font-inter text-3xl lg:text-[67px] lg:leading-[82px]'>
             Let’s Collaborate in building a better future
           </p>
-          <div className='mt-[100px] mb-[240px]'>
+          <div className='mt-[40px] lg:mt-[100px] mb-[240px]'>
             <Formik
               initialValues={{
                 firstName: "",

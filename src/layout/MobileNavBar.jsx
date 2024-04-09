@@ -14,14 +14,14 @@ const MobileNavBar = ({ handleClose}) => {
                 <img src={Close} alt="close" className="cursor-pointer" onClick={handleClose}/>
             </div>
             <ul class="mt-[32px] flex flex-col gap-y-[24px] pb-[16px]">
-                <li onClick={() => {navigate("/about us"); handleClose()}} className="font-mont font-semibold text-[17px]  text-[#00141B]">About us</li>
-                <li onClick={() => {navigate("/event"); handleClose()}} className="font-mont font-semibold text-[17px] text-[#00141B]">Event</li>
-                <li onClick={() => {navigate("/services"); handleClose()}} className="font-mont font-semibold text-[17px]  text-[#00141B]">Services</li>
-                <li onClick={() => {navigate("/research"); handleClose()}} className="font-mont font-semibold text-[17px]  text-[#00141B]">Research</li>
-                <li onClick={() => {navigate("/sustainability-assessment"); handleClose()}} className="font-mont font-semibold text-[17px]  text-[#00141B]">Sustainability Assessment</li>
+                <li onClick={() => {navigate("/about"); handleClose()}} className="font-mont  cursor-pointer font-semibold text-[17px]  text-[#00141B]">About us</li>
+                <li onClick={() => {navigate("/event"); handleClose()}} className="font-mont  cursor-pointer font-semibold text-[17px] text-[#00141B]">Event</li>
+                <li onClick={() => {navigate("/services"); handleClose()}} className="font-mont  cursor-pointer font-semibold text-[17px]  text-[#00141B]">Services</li>
+                <li onClick={() => {navigate("/research"); handleClose()}} className="font-mont  cursor-pointer font-semibold text-[17px]  text-[#00141B]">Research</li>
+                <li onClick={() => {navigate("/sustainability-assessment"); handleClose()}} className="font-mont cursor-pointer font-semibold text-[17px]  text-[#00141B]">Sustainability Assessment</li>
             </ul>
             <div className=" flex flex-col gap-4 mt-[156px]">
-                <button
+                <button cursor-pointer 
                     onClick={() => {navigate("/contact"); handleClose()}} 
                     className="p-[9.6px] w-full rounded-[4.8px] bg-[#fff] font-mont border border-[#00141B] text-[16px] font-semibold"
                 >

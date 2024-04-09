@@ -60,10 +60,10 @@ const Services = () => {
           }
         </div>
         <div className='flex items-center justify-center mt-[165px] flex-col'>
-            <p className='lg:w-[736px] text-center font-medium font-inter text-3xl text-[67px] lg:leading-[82px]'>
+            <p className='lg:w-[736px] text-center font-medium font-inter text-3xl lg:text-[67px] lg:leading-[82px]'>
                 Let’s Collaborate in building a better future
             </p>
-            <div className='mt-[100px] mb-[980px]'>
+            <div className='mt-[100px] mb-[165px]'>
                 <Formik
                 initialValues={{
                     firstName: "",

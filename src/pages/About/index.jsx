@@ -77,7 +77,7 @@ const About = () => {
           <p className='lg:w-[736px] text-center font-medium font-inter text-3xl lg:text-[67px] lg:leading-[82px]'>
             Let’s Collaborate in building a better future
           </p>
-          <div className='mt-[100px] mb-[290px]'>
+          <div className='mt-[40px] lg:mt-[100px] mb-[290px]'>
             <Formik
               initialValues={{
                 firstName: "",

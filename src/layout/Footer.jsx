@@ -30,10 +30,10 @@ const Footer = () => {
                 <p className='text-[#5B5B5B] cursor-pointer hover:text-[#5A5A5A] hover:font-medium font-inter text-[15px]' onClick={() => {navigate("/research/biofuels"); window.scrollTo(0, 0)}}>Biofuels</p>
             </div>
             <div className='flex flex-col gap-[17px]'>
-                <p className='text-[#5B5B5B] cursor-pointer hover:text-[#5A5A5A] hover:font-medium font-inter text-[15px]'>About Us</p>
-                <p className='text-[#5B5B5B] cursor-pointer hover:text-[#5A5A5A] hover:font-medium font-inter text-[15px]'>Research</p>
-                <p className='text-[#5B5B5B] cursor-pointer hover:text-[#5A5A5A] hover:font-medium font-inter text-[15px]'>Event</p>
-                <p className='text-[#5B5B5B] cursor-pointer hover:text-[#5A5A5A] hover:font-medium font-inter text-[15px]'>Contact</p>
+                <p className='text-[#5B5B5B] cursor-pointer hover:text-[#5A5A5A] hover:font-medium font-inter text-[15px]' onClick={() => {navigate("/about"); window.scrollTo(0, 0)}}>About Us</p>
+                <p className='text-[#5B5B5B] cursor-pointer hover:text-[#5A5A5A] hover:font-medium font-inter text-[15px]' onClick={() => {navigate("/research"); window.scrollTo(0, 0)}}>Research</p>
+                <p className='text-[#5B5B5B] cursor-pointer hover:text-[#5A5A5A] hover:font-medium font-inter text-[15px]' onClick={() => {navigate("/events"); window.scrollTo(0, 0)}}>Event</p>
+                <p className='text-[#5B5B5B] cursor-pointer hover:text-[#5A5A5A] hover:font-medium font-inter text-[15px]' onClick={() => {navigate("/contact"); window.scrollTo(0, 0)}}>Contact</p>
             </div>
         </div>
 
