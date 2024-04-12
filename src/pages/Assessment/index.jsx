@@ -118,7 +118,7 @@ const Assessment = () => {
   return (
     <div className='mt-32 w-full'>
       <div className='flex flex-col gap-[4px] px-5 lg:ml-1.5 lg:px-[65px] animate__animated animate__fadeInUp'>
-        <p className='text-[#DF632D] font-inter font-semibold text-3xl lg:text-[41px]'>Sustainability Assessment</p>
+        <p className='text-[#DF632D] font-inter  font-semibold text-3xl lg:text-[41px]'>Sustainability Assessment</p>
         <p className='text-[22px] text-[#000] font-inter lg:w-[949px]'>
           Specialising in sustainability audits, strategic consultancy and capacity building programs, 
           GCS aligns organisations with the global sustainable development goals
@@ -132,7 +132,7 @@ const Assessment = () => {
         <source src={Sustainability} type="video/mp4" ></source>
       </video>
       {/* <img src={Sustainability} alt='Sustainability-Assessment' className='mt-[82px] w-[90%] mx-auto' /> w-[1080px] */}
-      <p className='text-center font-semibold text-[46px] mt-40'>The Sustainability Assessment Framework</p>
+      <p className='text-center font-semibold text-[30px] lg:text-[46px] mt-40'>The Sustainability Assessment Framework</p>
       <div className='flex flex-col gap-[74px] mt-[59px] px-5 lg:px-[65px]'>
         <Divider className='bg-[#E1E1E1]' />
         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[63px] animate__animated animate__fadeInUp lg:mx-auto '>

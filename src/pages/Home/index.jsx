@@ -180,7 +180,7 @@ const Home = () => {
           </div>
           <div className='hidden lg:flex flex-col md:flex-row justify-between'>
             <img src={FourthLauch} alt='FourthLauch' className=' w-[443px] hover:scale-105 relative lg:-top-14  lg:left-44' />
-            <img src={FifthLauch} alt='FifthLauch' className='w-[443px] hover:scale-105 relative lg:bottom-10 lg:right-24' />
+            <img src={FifthLauch} alt='FifthLauch' className='w-[443px] hover:scale-105 relative lg:bottom-5 lg:right-24' />
           </div>
         </div>
 
