@@ -7,10 +7,10 @@ import MiniHeader from './MiniHeader'
 const Layout = () => {
   return (
     <div className='overflow-x-hidden'>
-        <div className='w-full relative fixed z-50 hidden lg:block'>
+        <div className='w-full relative fixed z-50 hidden xl:block'>
             <Header />
         </div>
-        <div className='xs:flex lg:hidden' >
+        <div className='flex xl:hidden' >
           <MiniHeader />
         </div>
         <div>

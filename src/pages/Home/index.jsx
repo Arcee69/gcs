@@ -173,18 +173,18 @@ const Home = () => {
           </p>
         </div>
         <div className='relative mt-5'>
-          <div className='flex flex-col items-center lg:flex-row justify-between'>
-            <img src={FirstLauch} alt='FirstLauch' className=' hidden lg:block hover:scale-105 md:w-[443px] left-0' />
-            <img src={SecondLauch} alt='SecondLauch' className='md:w-[543px] hover:scale-105'/>
-            <img src={ThirdLauch} alt='ThirdLauch' className=' hidden lg:block md:w-[443px] right-0 hover:scale-105' />
+          <div className='flex flex-col items-center xl:flex-row justify-between'>
+            <img src={FirstLauch} alt='FirstLauch' className=' hidden xl:block hover:scale-105 md:w-[443px] left-0' />
+            <img src={SecondLauch} alt='SecondLauch' className='md:w-[543px] lg:hover:scale-105'/>
+            <img src={ThirdLauch} alt='ThirdLauch' className=' hidden xl:block md:w-[443px] right-0 hover:scale-105' />
           </div>
-          <div className='hidden lg:flex flex-col md:flex-row justify-between'>
+          <div className='hidden xl:flex flex-col xl:flex-row justify-between'>
             <img src={FourthLauch} alt='FourthLauch' className=' w-[443px] hover:scale-105 relative lg:-top-14  lg:left-44' />
             <img src={FifthLauch} alt='FifthLauch' className='w-[443px] hover:scale-105 relative lg:bottom-5 lg:right-24' />
           </div>
         </div>
 
-        <div className='flex flex-col items-center justify-center gap-[44px] px-5 mt-10 lg:mt-0 lg:px-[70px]'>
+        <div className='flex flex-col items-center justify-center gap-[44px] px-5 mt-10 xl:mt-0 lg:px-[70px]'>
           <p className='font-inter text-[13px] text-center '>
             The event was attended by representatives from Transport for West Midlands, UKTram, West Midlands Combined 
             Authority, Railway Industry Association, Colas Rail, Arup, Siemens, EY, Egis, SYSTRA, Frazer-Nash 
@@ -215,7 +215,7 @@ const Home = () => {
             change in sustainability practices.
           </p>
         </div>
-        <div className='w-full grid grid-cols-1 lg:grid-cols-2 gap-6 mt-[59px]'>
+        <div className='w-full grid grid-cols-1 xl:grid-cols-2 gap-6 mt-[59px]'>
           {
             Services.map((item, index) => (
               <div key={index} className='w-full h-[200px] md:h-[145px] rounded-lg bg-[#3D5462] hover:bg-[#21A99D] p-6 flex flex-col gap-[5px]'>

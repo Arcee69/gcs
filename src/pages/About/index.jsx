@@ -18,7 +18,7 @@ const About = () => {
     <div className='w-full mt-32'>
       <div className='flex flex-col px-5 lg:px-[70px]'>
         <div className='flex flex-col lg:flex-row items-start gap-5 lg:gap-[150px]'>
-          <p className='text-[#DF632D] font-semibold font-inter text-[34px] animate__animated animate__fadeInLeftBig lg:text-[41px]'>About Us</p>
+          <p className='text-[#DF632D] font-semibold font-inter text-[34px]  animate__animated animate__fadeInLeftBig w-44 lg:text-[28px] xl:text-[41px]'>About Us</p>
           <p className='font-inter font-medium text-lg lg:text-[22px] text-[#000] lg:w-[796px] animate__animated animate__fadeInRightBig'>
             The Global Centre of Excellence in Sustainability (GCS) is a leader in the 
             sustainability field, providing a wide range of services to help organisations 

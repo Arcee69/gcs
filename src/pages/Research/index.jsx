@@ -90,7 +90,7 @@ const Research = () => {
           technology. 
         </p>
       </div>
-      <div className='grid w-full gap-14 grid-cols-1 lg:grid-cols-3 px-5 lg:px-[140px] mt-[65px] animate__animated animate__fadeInUp'>
+      <div className='grid w-full gap-14 grid-cols-1 lg:grid-cols-2 px-5 lg:px-[140px] mt-[65px] animate__animated animate__fadeInUp'>
         {
           research.map((item, index) => (
             <div key={index} className='bg-[#3D5462] w-[100%] hover:bg-[#21A99D] cursor-pointer h-[290px] flex flex-col justify-between p-4' onClick={() => {navigate(item?.link); window.scroll(0, 0)}}>
