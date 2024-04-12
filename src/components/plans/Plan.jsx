@@ -15,10 +15,14 @@ export default function Plan() {
                         <p className='text-[#B8B8B8] text-[15px] font-hanken'>2/30</p>
                     </div>
                 </div>
+       
                 <Box />
+           
             </div>
-            <Stroke2 />
-            <div className=''>
+            <div className='hidden md:block'>
+                <Stroke2 />
+            </div>
+            <div className='hidden md:block'>
                 <div className='absolute h-[51px] w-[239px]'>
                     <div className='px-[38px] h-full flex items-center gap-[25px]'>
                         <div className='flex gap-[7.62px] items-center'>

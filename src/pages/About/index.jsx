@@ -6,10 +6,13 @@ import { CgSpinner } from 'react-icons/cg'
 import LongTrain from "../../assets/png/long_train.png"
 import GCES from "../../assets/png/gces.png"
 import Art from "../../assets/png/art.png"
+import { useNavigate } from 'react-router-dom'
 
 const About = () => {
 
-  const loading = false
+  const loading = false;
+
+  const navigate = useNavigate()
 
   return (
     <div className='w-full mt-32'>
@@ -60,8 +63,11 @@ const About = () => {
             consultancy but also a global leader in safety, reliability and assurance systems engineering 
             systems consultancy, within the train metro and energy sectors.
           </p>
-          <button className='w-[251px] h-[62px] p-2 rounded-[31px] mt-10 lg:mt-5 border  hover:border-[#DF7B1F]'>
-            <p className='font-inter text-BLACK-_100 font-semibold text-xl'>Visit ART</p>
+          <button 
+            className='w-[251px] h-[62px] p-2 rounded-[31px] mt-10 lg:mt-5 border hover:bg-[#DF5216] hover:text-[#fff] border-[#DF5216] text-BLACK-_100 hover:border-[#DF7B1F]'
+            onClick={() => navigate("https://www.absoluterisktec.co.uk")}
+          >
+            <p className='font-inter  font-semibold text-xl'>Visit ART</p>
           </button>
         </div>
 

@@ -11,7 +11,7 @@ export default function Plans() {
     const navigate = useNavigate();
 
     return (
-        <div className='plans flex flex-col pt-[74px] mt-[160px] gap-[66px] overflow-hidden '>
+        <div className='plans flex flex-col pt-[74px] mt-[160px] gap-[66px]' style={{ overflowX: "hidden" }}>
             <p className='text-center text-[#fff] font-kumbh text-4xl lg:text-[45px]'>Discover Our Sustainability Assessment Tool </p>
             <div 
                 className='flex w-[100%]  pr-[8.7%] px-5 lg:pl-[12.8%] '

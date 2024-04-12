@@ -117,7 +117,7 @@ const Assessment = () => {
 
   return (
     <div className='mt-32 w-full'>
-      <div className='flex flex-col gap-[4px] px-5 lg:px-[65px] animate__animated animate__fadeInUp'>
+      <div className='flex flex-col gap-[4px] px-5 lg:ml-1.5 lg:px-[65px] animate__animated animate__fadeInUp'>
         <p className='text-[#DF632D] font-inter font-semibold text-3xl lg:text-[41px]'>Sustainability Assessment</p>
         <p className='text-[22px] text-[#000] font-inter lg:w-[949px]'>
           Specialising in sustainability audits, strategic consultancy and capacity building programs, 

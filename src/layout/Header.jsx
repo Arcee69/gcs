@@ -22,7 +22,7 @@ const Header = () => {
             </ul>
             <button 
               type='button'
-              className='border hover:border-[#DF5216] rounded-[22px] w-[113px] h-[45px] flex flex-col items-center justify-center p-2'
+              className='border hover:bg-[#DF5216] hover:text-[#fff] border-[#DF5216] rounded-[22px] w-[113px] h-[45px] flex flex-col items-center justify-center p-2'
               onClick={() => navigate("/contact")}
             >
                 Contact

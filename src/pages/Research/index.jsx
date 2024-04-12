@@ -2,9 +2,17 @@ import React from 'react'
 import { Form, Formik } from 'formik'
 import { CgSpinner } from 'react-icons/cg'
 
-import Hydrogen from "../../assets/png/hydrogen.png"
-import Tech from "../../assets/png/tech.png"
-import Economy from "../../assets/png/economy.png"
+
+import Tech from "../../assets/svg/ai_tech.svg"
+import ActiveTravel from "../../assets/svg/active_travel.svg"
+import Bio from "../../assets/svg/bio.svg"
+import Biofuels from "../../assets/svg/biofuels_icon.svg"
+import Circular from "../../assets/svg/circular_economy_icon.svg"
+import Ev from "../../assets/svg/ev_icon.svg"
+import Green from "../../assets/svg/green_hydrogen_icon.svg"
+import Mobility from "../../assets/svg/mobility_icon.svg"
+import Transport from "../../assets/svg/transport_circular_icon.svg"
+
 
 import ArrowUp from "../../assets/svg/arrow-up.svg"
 import { useNavigate } from 'react-router-dom'
@@ -18,7 +26,7 @@ const Research = () => {
   const research = [
     {
       title: "Green Hydrogen",
-      icon: Tech,
+      icon: Green,
       link: "/research/green-hydrogen",
       arrow: ArrowUp
     },
@@ -30,43 +38,43 @@ const Research = () => {
     },
     {
       title: "Transport Circular Economy",
-      icon: Tech,
+      icon: Transport,
       link: "/research/transport",
       arrow: ArrowUp
     },
     {
       title: "Circular economy in infrastructure and buildings ",
-      icon: Tech,
+      icon: Circular,
       link: "/research/economy",
       arrow: ArrowUp
     },
     {
       title: "Electric vehicles and decarbonisation ",
-      icon: Tech,
+      icon: Ev,
       link: "/research/ev",
       arrow: ArrowUp
     },
     {
       title: "Biofuels ",
-      icon: Tech,
+      icon: Biofuels,
       link: "/research/biofuels",
       arrow: ArrowUp
     },
     {
       title: "Bio maritime decarbonisation  ",
-      icon: Tech,
+      icon: Bio,
       link: "/research/maritime",
       arrow: ArrowUp
     },
     {
       title: "Mobility and social impact",
-      icon: Tech,
+      icon: Mobility,
       link: "/research/mobility",
       arrow: ArrowUp
     },
     {
       title: "Active Travel",
-      icon: Tech,
+      icon: ActiveTravel,
       link: "/research",
       arrow: ArrowUp
     },

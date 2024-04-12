@@ -2,7 +2,7 @@ import React from 'react'
 import { Divider } from '@mui/material'
 import { CgSpinner } from 'react-icons/cg';
 import { Formik, Form } from 'formik'
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 
 import Train from "../../assets/png/train.png"
 import Stroller from "../../assets/png/stroller.png"
@@ -12,6 +12,7 @@ import ThirdLauch from "../../assets/png/launch_c.png"
 import FourthLauch from "../../assets/png/launch_d.png"
 import FifthLauch from "../../assets/png/launch_e.png"
 import Banner from "../../assets/png/banner.png"
+import BgMobile from "../../assets/png/bg-mobile.png"
 
 import Bulb from "../../assets/svg/bulb.svg"
 import Cursor from "../../assets/svg/cursor.svg"
@@ -95,26 +96,24 @@ const Home = () => {
       </div>
 
       <div className='mx-auto w-[70%] hidden lg:flex justify-between items-center animate__animated animate__fadeInRight  animate__delay-2s'>
-        <img src={Art} alt='Art' />
-        <img src={Cesvit} alt='Cesvit' />
-        <img src={Transport} alt='Transport'/>
-        <img src={Uon} alt='uon'/>
-        <img src={Warwick} alt='warwick' />
-        <img src={West} alt='west' />
-
+        <Link to="https://www.absoluterisktec.co.uk" target='blank'><img src={Art} alt='Art' /></Link>
+        <Link to="https://cesvit.org" target='blank'><img src={Cesvit} alt='Cesvit' /></Link>
+        <Link to="https://www.tfwm.org.uk" target='blank'><img src={Transport} alt='Transport'/></Link>
+        <Link to="https://northampton.ac.uk" target='blank'><img src={Uon} alt='uon'/></Link>
+        <Link to="https://warwick.ac.uk" target='blank'><img src={Warwick} alt='warwick' /></Link>
+        <Link to="https://www.wmca.org.uk" target='blank'><img src={West} alt='west' /></Link> 
       </div>
       
-      <div className='relative mt-[35px] flex flex-col lg:flex-row justify-between px-5 lg:px-[130px] '>
+      <div className='relative mt-[35px] flex flex-col lg:flex-row gap-[200px] px-5 lg:px-[130px] '> {/* justify-between */}
 
-        <div className='flex flex-col items-center justify-center relative animate__animated animate__fadeInUpBig animate__delay-2s lg:hidden'>
-          <div className='bg-[#02A396] w-[243px] h-[125px] rounded-[171px]'></div>
-          <div className='flex absolute top-[43px] right-[37px] md:right-[200px]'>
-            <div className='bg-[#FFDECD] w-[243px] h-[390px] rounded-[171px]'></div>
-            <img src={Stroller} alt='Stroller' className='rounded-[171px] absolute top-[10px] left-[37px]' />
+        <div className='flex flex-col items-center justify-center relative animate__animated animate__fadeInRightBig animate__delay-2s lg:hidden'>
+          <div className='flex absolute top-[33px] left-[40px] md:right-[200px]'>
+            <img src={BgMobile} alt='bg-mobile' className=' h-[320px]'/>
+            <img src={Stroller} alt='Stroller' className='rounded-[171px] absolute h-[300px] top-[30px] left-[30px]' />
           </div>
         </div>
 
-        <div className='flex flex-col mt-96 lg:mt-0 lg:w-[505px] gap-[36px]'>
+        <div className='flex flex-col mt-64 lg:mt-0 lg:w-[505px] gap-[36px]'>
           <div className='flex flex-col gap-[9px]'>
             <div className='flex items-center gap-4'>
               <img src={Bulb} alt='icon' />
@@ -180,8 +179,8 @@ const Home = () => {
             <img src={ThirdLauch} alt='ThirdLauch' className=' hidden lg:block md:w-[443px] right-0 hover:scale-105' />
           </div>
           <div className='hidden lg:flex flex-col md:flex-row justify-between'>
-            <img src={FourthLauch} alt='FourthLauch' className=' w-[443px] hover:scale-105 relative lg:-top-14 lg:-z-10 lg:left-44' />
-            <img src={FifthLauch} alt='FifthLauch' className='w-[443px] hover:scale-105 relative lg:-top-24 lg:right-8' />
+            <img src={FourthLauch} alt='FourthLauch' className=' w-[443px] hover:scale-105 relative lg:-top-14  lg:left-44' />
+            <img src={FifthLauch} alt='FifthLauch' className='w-[443px] hover:scale-105 relative lg:bottom-10 lg:right-24' />
           </div>
         </div>
 
@@ -194,10 +193,10 @@ const Home = () => {
             and value creation for our communities and businesses.
           </p>
           <button 
-            className='w-[251px] h-[62px] p-2 rounded-[31px] border hover:border-[#DF7B1F]'
+            className='w-[251px] h-[62px] p-2 rounded-[31px] border  hover:bg-[#DF5216] text-BLACK-_100 hover:text-[#fff] border-[#DF5216]'
             onClick={() => navigate("/about")}
           >
-            <p className='font-inter text-BLACK-_100 font-semibold text-xl'>About us</p>
+            <p className='font-inter  font-semibold text-xl'>About us</p>
           </button>
         </div>
       </div>
