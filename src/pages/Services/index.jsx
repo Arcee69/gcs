@@ -48,8 +48,8 @@ const Services = () => {
                 practices.
             </p>
         </div>
-        <img src={ServicesImg} alt='Services' className='mt-[42px] lg:mt-[82px] lg:w-[100%] animate__animated animate__fadeInRight' /> {/* 1080px */}
-        <div className='w-full grid grid-cols-1 xl:grid-cols-2 gap-4 mt-[151px] animate__animated animate__fadeInUp '>
+        <img src={ServicesImg} alt='Services' className='mt-[42px] xl:mt-[82px] lg:w-[100%] animate__animated animate__fadeInRight' /> {/* 1080px */}
+        <div className='w-full grid grid-cols-1 xl:grid-cols-2 gap-4 mt-[42px] xl:mt-[151px] animate__animated animate__fadeInUp '>
           {
             ServicesItems.map((item, index) => (
               <div key={index} className='lg:w-[100%] lg:h-[145px] rounded-lg bg-[#3D5462] hover:bg-[#21A99D] p-6 flex flex-col gap-[5px]'>
