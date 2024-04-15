@@ -175,7 +175,7 @@ const Home = () => {
         <div className='hidden lg:flex flex-col relative animate__animated animate__fadeInRightBig animate__delay-2s'>
           <div className='bg-[#02A396] w-[343px] h-[225px] rounded-[171px]'></div>
           <div className='flex absolute top-[43px] right-[37px]'>
-            <div className='bg-[#3D5462] w-[343px] h-[537px] rounded-[171px]'></div>
+            <div className='bg-[#DF632D] w-[343px] h-[537px] rounded-[171px]'></div>
             <img src={Stroller} alt='Stroller' className='rounded-[171px] absolute top-[10px] left-[37px]' />
           </div>
         </div>
