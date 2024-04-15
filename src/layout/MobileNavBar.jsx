@@ -20,7 +20,7 @@ const MobileNavBar = ({ handleClose}) => {
                 <li onClick={() => {navigate("/research"); window.scrollTo(0,0); handleClose()}} className="font-mont  cursor-pointer font-semibold text-[17px]  text-[#00141B]">Research</li>
                 <li onClick={() => {navigate("/sustainability-assessment"); window.scrollTo(0,0); handleClose()}} className="font-mont cursor-pointer font-semibold text-[17px]  text-[#00141B]">Sustainability Assessment</li>
             </ul>
-            <div className=" flex flex-col gap-4 mt-[156px]">
+            <div className=" flex flex-col gap-4 mt-[42px]">
                 <button cursor-pointer 
                     onClick={() => {navigate("/contact"); window.scrollTo(0,0); handleClose()}} 
                     className="p-[9.6px] w-full rounded-[4.8px] bg-[#fff] font-mont border border-[#00141B] text-[16px] font-semibold"

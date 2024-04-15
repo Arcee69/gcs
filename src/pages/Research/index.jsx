@@ -103,11 +103,11 @@ const Research = () => {
           ))
         }
       </div>
-      <div className='flex items-center justify-center mt-[165px] flex-col'>
+      <div className='flex items-center justify-center mt-[42px] xl:mt-[165px] flex-col'>
         <p className='lg:w-[736px] text-center font-medium font-inter text-3xl lg:text-[67px] lg:leading-[82px] animate__animated animate__fadeInRight animate__delay-2s'>
             Let’s Collaborate in building a better future
         </p>
-        <div className=' mt-[40px] lg:mt-[100px] mb-[385px]'>
+        <div className=' mt-[40px] lg:mt-[100px] mb-[100px] xl:mb-[385px]'>
           <Formik
             initialValues={{
                 firstName: "",

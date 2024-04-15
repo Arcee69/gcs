@@ -55,7 +55,7 @@ const Biofuels = () => {
                 </p>
             </div>
         </div>
-        <div className='flex flex-col lg:flex-row items-start px-5 lg:px-0 lg:w-[1118px] lg:mx-auto gap-5 lg:gap-[134px] mt-[168px] mb-[108px]'>
+        <div className='flex flex-col lg:flex-row items-start px-5 lg:px-0 lg:w-[1118px] lg:mx-auto gap-5 lg:gap-[134px] mt-[42px] xl:mt-[168px] mb-[108px]'>
             <div className='flex flex-col gap-[8px]'>
                 <p className='font-inter font-semibold text-3xl lg:text-[44px]'>Become a member</p>
                 <p className='text-[#19373E] text-xl lg:text-[24px] font-inter font-medium'>Join our growing community</p>

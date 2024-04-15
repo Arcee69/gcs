@@ -28,27 +28,24 @@ const About = () => {
           </p>
         </div>
         <img src={LongTrain} alt='long train' className='mt-14 animate__animated animate__fadeInUpBig '/>
-        <div className='mt-24 flex flex-col gap-5 animate__animated animate__fadeInUpBig '>
-          <p className='font-inter text-[29px] font-medium text-[#DF632D] '>“ Our objectives include </p>
+        <div className='mt-[42px] lg:mt-24 flex flex-col gap-5 animate__animated animate__fadeInUpBig '>
+          <p className='font-inter text-[29px] font-medium text-[#DF632D] '>Our objective</p>
           <p className='lg:w-[854px] text-lg lg:text-[29px] font-inter font-medium'>
             Driving transformative change, inspiring action, and 
             contributing to the achievement of global sustainability goals.
           </p>
         </div>
-        <div className='mt-[58px] flex flex-col gap-5 animate__animated animate__fadeInUpBig animate__delay-2s '>
-          <p className='font-inter text-[29px] font-medium text-[#DF632D] '>“ Our commitment</p>
+        <div className='mt-[42px] xl:mt-[58px] flex flex-col gap-5 animate__animated animate__fadeInUpBig animate__delay-2s '>
+          <p className='font-inter text-[29px] font-medium text-[#DF632D] '>Our commitment</p>
           <p className='lg:w-[928px] text-lg lg:text-[29px] font-inter font-medium'>
             create a lasting positive impact on the planet and its 
             inhabitants, contributing to a future where prosperity and 
             well-being align with environmental stewardship and social equity. 
           </p>
         </div>
-
-
-
       </div>
 
-      <div className='px-5 lg:px-[70px] flex flex-col mt-[151px]'>
+      <div className='px-5 lg:px-[70px] flex flex-col mt-[42px] lg:mt-[151px]'>
         <div className='flex flex-col'>
           <Divider className='bg-[#000]'/>
           <p className='font-inter text-[9px] font-bold'>GCS & ART</p>
@@ -73,7 +70,7 @@ const About = () => {
 
       </div>
 
-      <div className='mt-[120px] flex flex-col px-5 lg:px-[70px]'>
+      <div className='mt-[42px] xl:mt-[120px] flex flex-col px-5 lg:px-[70px]'>
         <div className='flex flex-col'>
           <Divider className='bg-[#000]'/>
           <p className='font-inter text-[9px] font-bold'>CONTACT US</p>
@@ -83,7 +80,7 @@ const About = () => {
           <p className='lg:w-[736px] text-center font-medium font-inter text-3xl lg:text-[67px] lg:leading-[82px] animate__animated animate__fadeInRight  animate__delay-2s'>
             Let’s Collaborate in building a better future
           </p>
-          <div className='mt-[40px] lg:mt-[100px] mb-[290px]'>
+          <div className='mt-[42px] xl:mt-[100px] mb-[100px] lg:mb-[290px]'>
             <Formik
               initialValues={{
                 firstName: "",

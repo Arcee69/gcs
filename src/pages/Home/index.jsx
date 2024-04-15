@@ -3,6 +3,9 @@ import { Divider } from '@mui/material'
 import { CgSpinner } from 'react-icons/cg';
 import { Formik, Form } from 'formik'
 import { useNavigate, Link } from 'react-router-dom';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from 'react-slick';
 
 import Train from "../../assets/png/train.png"
 import Stroller from "../../assets/png/stroller.png"
@@ -23,6 +26,7 @@ import Transport from "../../assets/svg/transport.svg"
 import Uon from "../../assets/svg/uon.svg"
 import Warwick from "../../assets/svg/warwick.svg"
 import West from "../../assets/svg/west_midlands.svg"
+
 
 const Home = () => {
 
@@ -60,6 +64,15 @@ const Home = () => {
   }
 
   const navigate = useNavigate()
+
+  const settings = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true
+  };
 
   return (
     <div className='w-full flex flex-col mt-20'>
@@ -149,7 +162,7 @@ const Home = () => {
               World-leading hub of knowledge advancing sustainable practices 
               and solutions across various sectors.
             </p>
-            <Divider className='bg-[#000]' />
+            <Divider className='bg-[#000] hidden xl:flex' />
           </div>
         </div>
 
@@ -162,17 +175,18 @@ const Home = () => {
         </div>
       </div>
 
-      <div className='mt-[160px] animate__animated animate__fadeInUpBig animate__delay-2s flex flex-col'>
+      <div className='mt-[20px] xl:mt-[160px] animate__animated animate__fadeInUpBig animate__delay-2s flex flex-col'>
         <div className='px-5 lg:px-[70px]'>
           <div className='flex flex-col'>
             <Divider className='bg-[#000]'/>
             <p className='font-inter text-[9px] font-bold'>GCS LAUNCH 2023</p>
           </div>
-          <p className='text-[#141414] lg:w-[556px] text-4xl lg:leading-[82px] font-inter font-bold lg:text-[104px] mx-auto text-center mt-[66px]'>
+          <p className='text-[#141414] lg:w-[556px] text-4xl lg:leading-[82px] font-inter font-bold lg:text-[104px] mx-auto text-center mt-[42px] lg:mt-[66px]'>
             The Grand Launch
           </p>
         </div>
-        <div className='relative mt-5'>
+
+        <div className='relative mt-5 hidden xl:block'>
           <div className='flex flex-col items-center xl:flex-row justify-between'>
             <img src={FirstLauch} alt='FirstLauch' className=' hidden xl:block hover:scale-105 md:w-[443px] left-0' />
             <img src={SecondLauch} alt='SecondLauch' className='md:w-[543px] lg:hover:scale-105'/>
@@ -184,7 +198,27 @@ const Home = () => {
           </div>
         </div>
 
-        <div className='flex flex-col items-center justify-center gap-[44px] px-5 mt-10 xl:mt-0 lg:px-[70px]'>
+        <div className='w-full xl:hidden mt-5'>
+          <Slider {...settings}>
+            <div className='w-full px-5 flex justify-center'>
+              <img src={FirstLauch} alt='FirstLauch' className=' hover:scale-105  ' />
+            </div>
+            <div className='w-full px-5 flex justify-center'>
+              <img src={SecondLauch} alt='SecondLauch' className='hover:scale-105'/>
+            </div>
+            <div className='w-full px-5 flex justify-center'>
+              <img src={ThirdLauch} alt='ThirdLauch' className='hover:scale-105' />
+            </div>
+            <div className='w-full px-5 flex justify-center'>
+              <img src={FourthLauch} alt='FourthLauch' className='hover:scale-105' />
+            </div>
+            <div className='w-full px-5 flex justify-center'>
+              <img src={FifthLauch} alt='FifthLauch' className='hover:scale-105 ' />
+            </div>
+          </Slider>
+        </div>
+
+        <div className='flex flex-col items-center justify-center gap-[44px] px-5  lg:px-[70px]'>
           <p className='font-inter text-[13px] text-center '>
             The event was attended by representatives from Transport for West Midlands, UKTram, West Midlands Combined 
             Authority, Railway Industry Association, Colas Rail, Arup, Siemens, EY, Egis, SYSTRA, Frazer-Nash 
@@ -206,21 +240,21 @@ const Home = () => {
           <Divider className='bg-[#000]'/>
           <p className='font-inter text-[9px] font-bold'>GCS SERVICES</p>
         </div>
-        <div className='lg:px-[25px] mt-[82px] flex flex-col gap-[14px] animate__animated animate__fadeInRightBig animate__delay-2s'>
+        <div className='lg:px-[25px] mt-[42px] xl:mt-[82px] flex flex-col gap-[14px] animate__animated animate__fadeInRightBig animate__delay-2s'>
           <p className='font-inter font-semibold text-[38px] text-BLACK-_100'>Our Services</p>
-          <p className='font-inter text-lg text-BLACK-_100 text-justify'>
+          <p className='font-inter text-lg text-BLACK-_100 text-left'>
             The demand for sustainable practices is rapidly increasing as businesses and governments recognise the urgency of addressing 
             environmental and social issues. GCS operates within a growing market where organisations seek expertise and resources to 
             transition towards more sustainable operations. Our services are designed to meet this growing demand and drive meaningful 
             change in sustainability practices.
           </p>
         </div>
-        <div className='w-full grid grid-cols-1 xl:grid-cols-2 gap-6 mt-[59px]'>
+        <div className='w-full grid grid-cols-1 xl:grid-cols-2 gap-4 mt-[59px]'>
           {
             Services.map((item, index) => (
-              <div key={index} className='w-full h-[200px] md:h-[145px] rounded-lg bg-[#3D5462] hover:bg-[#21A99D] p-6 flex flex-col gap-[5px]'>
+              <div key={index} className='w-full lg:h-[145px] rounded-lg bg-[#3D5462] hover:bg-[#21A99D] p-6 flex flex-col gap-[5px]'>
                 <p className='text-[#fff] font-inter font-semibold text-[22px]'>{item?.title}</p>
-                <p className='text-[#fff] text-lg font-inter'>{item?.subtitle}</p>
+                <p className='text-[#fff] text-base font-inter'>{item?.subtitle}</p>
               </div>
             ))
           }
@@ -233,11 +267,11 @@ const Home = () => {
           <p className='font-inter text-[9px] font-bold'>GCS SERVICES</p>
         </div>
         
-        <div className='flex items-center justify-center mt-[104px] flex-col'>
+        <div className='flex items-center justify-center mt-[42px] xl:mt-[104px] flex-col'>
           <p className='lg:w-[736px] text-center font-medium font-inter text-3xl lg:text-[67px] lg:leading-[82px] animate__animated animate__fadeInRight  animate__delay-2s'>
             Let’s Collaborate in building a better future
           </p>
-          <div className='mt-[40px] lg:mt-[100px] mb-[240px]'>
+          <div className='mt-[40px] lg:mt-[100px] mb-[100px] lg:mb-[240px]'>
             <Formik
               initialValues={{
                 firstName: "",
