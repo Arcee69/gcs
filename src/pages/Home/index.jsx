@@ -17,6 +17,11 @@ import FifthLauch from "../../assets/png/launch_e.png"
 import Banner from "../../assets/png/banner.png"
 import BgMobile from "../../assets/png/bg-mobile.png"
 
+import One from "../../assets/png/one.jpg"
+import Two from "../../assets/png/two.jpg"
+import Three from "../../assets/png/three.jpg"
+import Four from "../../assets/png/four.jpg"
+
 import Bulb from "../../assets/svg/bulb.svg"
 import Cursor from "../../assets/svg/cursor.svg"
 import Aim from "../../assets/svg/aim.svg"
@@ -26,6 +31,7 @@ import Transport from "../../assets/svg/transport.svg"
 import Uon from "../../assets/svg/uon.svg"
 import Warwick from "../../assets/svg/warwick.svg"
 import West from "../../assets/svg/west_midlands.svg"
+import { TbWood } from 'react-icons/tb';
 
 
 const Home = () => {
@@ -201,20 +207,20 @@ const Home = () => {
         <div className='w-full xl:hidden mt-5'>
           <Slider {...settings}>
             <div className='w-full px-5 flex justify-center'>
-              <img src={FirstLauch} alt='FirstLauch' className=' hover:scale-105  ' />
+              <img src={One} alt='FirstLauch' className=' hover:scale-105  ' />
             </div>
             <div className='w-full px-5 flex justify-center'>
-              <img src={SecondLauch} alt='SecondLauch' className='hover:scale-105'/>
+              <img src={Two} alt='SecondLauch' className='hover:scale-105'/>
             </div>
             <div className='w-full px-5 flex justify-center'>
-              <img src={ThirdLauch} alt='ThirdLauch' className='hover:scale-105' />
+              <img src={Three} alt='ThirdLauch' className='hover:scale-105' />
             </div>
             <div className='w-full px-5 flex justify-center'>
-              <img src={FourthLauch} alt='FourthLauch' className='hover:scale-105' />
+              <img src={Four} alt='FourthLauch' className='hover:scale-105' />
             </div>
-            <div className='w-full px-5 flex justify-center'>
+            {/* <div className='w-full px-5 flex justify-center'>
               <img src={FifthLauch} alt='FifthLauch' className='hover:scale-105 ' />
-            </div>
+            </div> */}
           </Slider>
         </div>
 
