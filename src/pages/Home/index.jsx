@@ -21,6 +21,7 @@ import One from "../../assets/png/one.jpg"
 import Two from "../../assets/png/two.jpg"
 import Three from "../../assets/png/three.jpg"
 import Four from "../../assets/png/four.jpg"
+import Five from "../../assets/png/five.jpg"
 
 import Bulb from "../../assets/svg/bulb.svg"
 import Cursor from "../../assets/svg/cursor.svg"
@@ -218,9 +219,9 @@ const Home = () => {
             <div className='w-full px-5 flex justify-center'>
               <img src={Four} alt='FourthLauch' className='hover:scale-105' />
             </div>
-            {/* <div className='w-full px-5 flex justify-center'>
-              <img src={FifthLauch} alt='FifthLauch' className='hover:scale-105 ' />
-            </div> */}
+            <div className='w-full px-5 flex justify-center'>
+              <img src={Five} alt='FifthLauch' className='hover:scale-105 ' />
+            </div>
           </Slider>
         </div>
 
