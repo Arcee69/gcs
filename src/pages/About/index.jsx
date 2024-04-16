@@ -107,7 +107,7 @@ const About = () => {
             <img src={GCES} alt='GCES' className='w-[249px] rounded-xl' />
             <img src={Art} alt='ART' className='w-[249px] rounded-xl' />
           </div>
-          <p className='font-inter font-medium text-[14px] lg:leading-[52px] md:text-[19px]  lg:w-[1025px]'>
+          <p className='font-inter font-medium text-lg lg:leading-[52px] xl:text-[22px] lg:w-[1025px]'>
             GCS & ART are UK-based international companies leading not only in sustainability consultancy 
             consultancy but also a global leader in safety, reliability and assurance systems engineering 
             systems consultancy, within the train metro and energy sectors.
