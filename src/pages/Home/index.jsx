@@ -199,7 +199,7 @@ const Home = () => {
             <Divider className='bg-[#000]'/>
             <p className='font-inter text-[9px] font-bold'>GCS LAUNCH 2023</p>
           </div>
-          <p className='text-[#141414] lg:w-[556px] text-[38px] lg:leading-[82px] font-inter font-bold lg:text-[104px] mx-auto text-center mt-[42px] lg:mt-[66px]'>
+          <p className='text-[#141414] xl:w-[556px] text-[38px] xl:leading-[82px] font-inter font-bold xl:text-[104px] mx-auto text-center mt-[42px] lg:mt-[66px]'>
             The Grand Launch
           </p>
         </div>

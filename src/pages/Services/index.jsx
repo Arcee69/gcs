@@ -48,7 +48,7 @@ const Services = () => {
                 practices.
             </p>
         </div>
-        <img src={ServicesImg} alt='Services' className='mt-[42px] xl:mt-[82px] lg:w-[100%] animate__animated animate__fadeInRight' /> {/* 1080px */}
+        <img src={ServicesImg} alt='Services' className='mt-[42px] xl:mt-[82px] lg:w-[100%] rounded-xl animate__animated animate__fadeInRight' /> {/* 1080px */}
         <div className='w-full grid grid-cols-1 xl:grid-cols-2 gap-4 mt-[42px] xl:mt-[151px] animate__animated animate__fadeInUp '>
           {
             ServicesItems.map((item, index) => (

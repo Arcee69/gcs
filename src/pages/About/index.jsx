@@ -28,17 +28,17 @@ const About = () => {
             decarbonisation, and more. 
           </p>
         </div>
-        <img src={LongTrain} alt='long train' className='mt-14 animate__animated animate__fadeInUpBig '/>
+        <img src={LongTrain} alt='long train' className='mt-14 rounded-xl animate__animated animate__fadeInUpBig '/>
         <div className='mt-[42px] lg:mt-24 flex flex-col gap-5 animate__animated animate__fadeInUpBig '>
           <p className='font-inter text-[29px] font-medium text-[#DF632D] '>Our objective</p>
-          <p className='lg:w-[854px] text-lg lg:text-[29px] font-inter font-medium'>
+          <p className='lg:w-[854px] text-lg lg:text-[29px] lg:leading-[52px] font-inter font-medium'>
             Driving transformative change, inspiring action, and 
             contributing to the achievement of global sustainability goals.
           </p>
         </div>
         <div className='mt-[42px] xl:mt-[58px] flex flex-col gap-5 animate__animated animate__fadeInUpBig animate__delay-2s '>
           <p className='font-inter text-[29px] font-medium text-[#DF632D] '>Our commitment</p>
-          <p className='lg:w-[928px] text-lg lg:text-[29px] font-inter font-medium'>
+          <p className='lg:w-[928px] text-lg lg:text-[29px] lg:leading-[52px] font-inter font-medium'>
             create a lasting positive impact on the planet and its 
             inhabitants, contributing to a future where prosperity and 
             well-being align with environmental stewardship and social equity. 
@@ -56,7 +56,7 @@ const About = () => {
             <img src={GCES} alt='GCES' className='w-[249px] rounded-xl' />
             <img src={Art} alt='ART' className='w-[249px] rounded-xl' />
           </div>
-          <p className='font-inter font-medium text-[14px] md:text-[19px]  lg:w-[1025px]'>
+          <p className='font-inter font-medium text-[14px] lg:leading-[52px] md:text-[19px]  lg:w-[1025px]'>
             GCS & ART are UK-based international companies leading not only in sustainability consultancy 
             consultancy but also a global leader in safety, reliability and assurance systems engineering 
             systems consultancy, within the train metro and energy sectors.
