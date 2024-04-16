@@ -135,22 +135,22 @@ const Home = () => {
         <Link to="https://www.wmca.org.uk" target='blank'><img src={West} alt='west' /></Link> 
       </div>
       
-      <div className='relative mt-[35px] flex flex-col lg:flex-row gap-[200px] px-5 lg:px-[130px] '> {/* justify-between */}
+      <div className='relative mt-[35px] flex flex-col xl:flex-row gap-[200px] px-5 lg:px-[130px] '> {/* justify-between */}
 
-        <div className='flex flex-col items-center justify-center relative animate__animated animate__fadeInRightBig animate__delay-2s lg:hidden'>
+        <div className='flex flex-col items-center justify-center relative animate__animated animate__fadeInRightBig animate__delay-2s xl:hidden'>
           <div className='flex absolute top-[33px] left-[40px] md:right-[200px]'>
             <img src={BgMobile} alt='bg-mobile' className=' h-[320px]'/>
             <img src={Stroller} alt='Stroller' className='rounded-[171px] absolute h-[300px] top-[30px] left-[30px]' />
           </div>
         </div>
 
-        <div className='flex flex-col mt-64 lg:mt-0 lg:w-[505px] gap-[36px]'>
+        <div className='flex flex-col mt-64 xl:mt-0 xl:w-[505px] gap-[36px]'>
           <div className='flex flex-col gap-[9px]'>
             <div className='flex items-center gap-4'>
               <img src={Bulb} alt='icon' />
               <p className='text-[#DF632D] font-bold text-[26px] '>Our Vision</p>
             </div>
-            <p className='font-inter text-[#000] font-medium text-lg lg:w-[417px]'>
+            <p className='font-inter text-[#000] font-medium text-lg xl:w-[417px]'>
               To be a global leader in advancing sustainability practices, 
               inspiring transformative change for a better world. 
             </p>
@@ -162,7 +162,7 @@ const Home = () => {
               <img src={Cursor} alt='icon' />
               <p className='text-[#DF632D] font-bold text-[26px] '>Mission</p>
             </div>
-            <p className='font-inter text-[#000] font-medium text-lg lg:w-[514px]'>
+            <p className='font-inter text-[#000] font-medium text-lg xl:w-[514px]'>
               We champion sustainability by driving innovation, research, 
               and collaboration. We empower industries, governments, 
               and communities to embrace and implement sustainable 
@@ -176,7 +176,7 @@ const Home = () => {
               <img src={Aim} alt='icon' />
               <p className='text-[#DF632D] font-bold text-[26px] '>Aims</p>
             </div>
-            <p className='font-inter text-[#000] font-medium text-lg lg:w-[491px]'>
+            <p className='font-inter text-[#000] font-medium text-lg xl:w-[491px]'>
               World-leading hub of knowledge advancing sustainable practices 
               and solutions across various sectors.
             </p>
@@ -184,7 +184,7 @@ const Home = () => {
           </div>
         </div>
 
-        <div className='hidden lg:flex flex-col relative animate__animated animate__fadeInRightBig animate__delay-2s'>
+        <div className='hidden xl:flex flex-col relative animate__animated animate__fadeInRightBig animate__delay-2s'>
           <div className='bg-[#02A396] w-[343px] h-[225px] rounded-[171px]'></div>
           <div className='flex absolute top-[43px] right-[37px]'>
             <div className='bg-[#DF632D] w-[343px] h-[537px] rounded-[171px]'></div>
@@ -193,7 +193,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className='mt-[20px] xl:mt-[160px] animate__animated animate__fadeInUpBig animate__delay-2s flex flex-col'>
+      <div className='mt-[20px] lg:mt-[80px] xl:mt-[160px] animate__animated animate__fadeInUpBig animate__delay-2s flex flex-col'>
         <div className='px-5 lg:px-[70px]'>
           <div className='flex flex-col'>
             <Divider className='bg-[#000]'/>

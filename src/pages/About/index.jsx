@@ -35,16 +35,16 @@ const About = () => {
         </div>
         <img src={LongTrain} alt='long train' className='mt-14 rounded-xl animate__animated animate__fadeInUpBig '/>
 
-        <div className='relative lg:mt-[79px] mb-[79px] flex flex-col lg:flex-row gap-[200px] px-5 lg:px-[120px]'>
+        <div className='relative lg:mt-[79px] mb-[79px] flex flex-col xl:flex-row gap-[200px] px-5 xl:px-[120px]'>
 
-        <div className='flex flex-col items-center justify-center relative animate__animated animate__fadeInRightBig animate__delay-2s lg:hidden'>
+        <div className='flex flex-col items-center justify-center relative animate__animated animate__fadeInRightBig animate__delay-2s xl:hidden'>
           <div className='flex absolute top-[33px] left-[40px] md:right-[200px]'>
             <img src={BgMobile} alt='bg-mobile' className=' h-[320px]'/>
             <img src={AboutMask} alt='Stroller' className='rounded-[171px] absolute h-[300px] top-[30px] left-[30px]' />
           </div>
         </div>
 
-          <div className='flex flex-col mt-64 lg:mt-0 lg:w-[505px] my-auto gap-[36px]'>
+          <div className='flex flex-col mt-64 xl:mt-0 lg:w-[505px] my-auto gap-[36px]'>
             <div className='flex flex-col gap-3'>
               <div className='flex items-center gap-4'>
                 <img src={Eye} alt='icon' />
@@ -70,7 +70,7 @@ const About = () => {
             </div>
           </div>
 
-          <div className='hidden lg:flex flex-col relative animate__animated animate__fadeInRightBig animate__delay-2s'>
+          <div className='hidden xl:flex flex-col relative animate__animated animate__fadeInRightBig animate__delay-2s'>
             <div className='bg-[#02A396] w-[343px] h-[225px] rounded-[171px]'></div>
             <div className='flex absolute top-[43px] right-[37px]'>
               <div className='bg-[#FFDECD] w-[343px] h-[537px] rounded-[171px]'></div>
@@ -107,7 +107,7 @@ const About = () => {
             <img src={GCES} alt='GCES' className='w-[249px] rounded-xl' />
             <img src={Art} alt='ART' className='w-[249px] rounded-xl' />
           </div>
-        <p className='font-inter font-medium text-lg lg:leading-[36px] xl:text-[22px] lg:w-[1025px]'> {/* lg:leading-[52px] */}
+        <p className='font-inter font-medium text-lg lg:w-[1025px]'> {/* lg:leading-[36px] */}
             GCS & ART are UK-based international companies leading not only in sustainability consultancy 
             consultancy but also a global leader in safety, reliability and assurance systems engineering 
             systems consultancy, within the train metro and energy sectors.
