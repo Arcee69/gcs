@@ -18,8 +18,8 @@ const Economy = () => {
   return (
     <div className='mt-32'>
         <div className='flex flex-col gap-4 px-5 lg:pl-[62px] lg:pr-0 animate__animated animate__fadeInUp'>
-            <p className='text-[#000] font-inter font-semibold text-4xl lg:text-[59px]'>Research</p>
-            <p className='text-[20px] lg:text-[22px] text-[#000] font-inter w-[100%]'>
+            <p className='text-[#000] font-inter font-semibold text-[34px] xl:text-[41px]'>Research</p>
+            <p className='text-[20px] xl:text-[22px] text-[#000] font-inter w-[100%]'>
                 At GCS we are teaming together with research institutions, government organisations, and universities. 
                 Collaborating with professionals in the field can accelerate research and provide access to innovative 
                 technology. 
@@ -28,7 +28,7 @@ const Economy = () => {
         <img src={EconomyImg} alt='Economy' className='mt-[82px] w-full' />
         <div className='bg-[#F6FFF2] px-5 lg:px-[77px] py-[93px] w-full flex flex-col'>
             <div className='flex flex-col gap-5'>
-                <p className='font-inter font-semibold text-4xl lg:text-[49px] lg:w-[670px] leading-[72px]'>Circular economy in infrastructure and buildings </p>
+                <p className='font-inter font-semibold text-3xl xl:text-[49px] lg:w-[670px] leading-[72px]'>Circular economy in infrastructure and buildings </p>
                 <p className='font-inter text-[20px]'>
                     Throughout the whole lifecycle of construction and infrastructure projects, the circular economy is a sustainable strategy 
                     that attempts to maximise resource utilisation, minimise waste, and lessen environmental effect. With this approach, 

@@ -18,8 +18,8 @@ const Maritime = () => {
   return (
     <div className='mt-32'>
         <div className='flex flex-col gap-4 px-5 lg:pl-[62px] lg:pr-0 animate__animated animate__fadeInUp'>
-            <p className='text-[#000] font-inter font-semibold text-4xl lg:text-[59px]'>Research</p>
-            <p className='text-[20px] lg:text-[22px] text-[#000] font-inter w-[100%]'>
+            <p className='text-[#000] font-inter font-semibold text-[34px] xl:text-[41px]'>Research</p>
+            <p className='text-[20px] xl:text-[22px] text-[#000] font-inter w-[100%]'>
                 At GCS we are teaming together with research institutions, government organisations, and universities. 
                 Collaborating with professionals in the field can accelerate research and provide access to innovative 
                 technology. 

@@ -2,7 +2,7 @@ import React from 'react'
 import { CgSpinner } from 'react-icons/cg'
 import { Form, Formik } from 'formik'
 
-import ServicesImg from "../../assets/png/services.png"
+import ServicesImg from "../../assets/png/services-b.jpg"
 
 const Services = () => {
 
@@ -39,8 +39,8 @@ const Services = () => {
   return (
     <div className='mt-32 px-5 lg:px-[60px]'>
         <div className='flex flex-col gap-[4px] animate__animated animate__fadeInUp'>
-            <p className='text-[#DF632D] font-inter font-semibold text-[41px]'>Our Services</p>
-            <p className='text-lg text-[#000] font-inter text-left lg:w-[100%]'>
+            <p className='text-[#DF632D] font-inter font-semibold text-[34px] xl:text-[41px]'>Our Services</p>
+            <p className='text-lg xl:text-[22px] text-[#000] font-inter text-left lg:w-[100%]'>
                 The demand for sustainable practices is rapidly increasing as businesses and governments recognise 
                 the urgency of addressing environmental and social issues. GCS operates within a growing market 
                 where organisations seek expertise and resources to transition towards more sustainable operations. 

@@ -17,6 +17,8 @@ import FifthLauch from "../../assets/png/launch_e.png"
 import Banner from "../../assets/png/banner.png"
 import BgMobile from "../../assets/png/bg-mobile.png"
 
+import HomeHero from "../../assets/vid/home-hero.mp4"
+
 import One from "../../assets/png/one.jpg"
 import Two from "../../assets/png/two.jpg"
 import Three from "../../assets/png/three.jpg"
@@ -84,19 +86,28 @@ const Home = () => {
   return (
     <div className='w-full flex flex-col mt-20'>
       <div
-        style={{ backgroundImage: `url(${Train})`, backgroundSize:"cover", backgroundRepeat: "no-repeat", position:"relative" }}
+        style={{ background: "#000000ab", backgroundRepeat:"no-repeat", backgroundSize:"cover",position: 'relative'}}
         className='w-full h-[587px] '
       >
-        <div
-          className='pt-[126px] pb-[107px] px-5 lg:pl-[149px] lg:pr-0 flex items-center' 
-          style={{
-            backgroundColor: "rgba(0, 0, 0, 0.5)",
-            position: "absolute",
+         <video
+            autoPlay
+            loop
+            muted
+            style={{
+            position: 'absolute',
             top: 0,
             left: 0,
-            bottom: 0,
-            right: 0,
-          }}
+            width: '100%',
+            height: '100%',
+            objectFit: 'cover',
+            zIndex: -1, // Ensure the video is rendered behind other content
+            }}
+        >
+        <source src={HomeHero} type="video/mp4" />
+      
+      </video>
+        <div
+          className='pt-[126px] pb-[107px] px-5 lg:pl-[149px] lg:pr-0 flex items-center' 
         >
           <div className='flex flex-col gap-[32px] animate__animated animate__fadeInUpBig'>
             <div className='flex flex-col gap-[9px] w-full lg:w-[417px]'>
@@ -188,7 +199,7 @@ const Home = () => {
             <Divider className='bg-[#000]'/>
             <p className='font-inter text-[9px] font-bold'>GCS LAUNCH 2023</p>
           </div>
-          <p className='text-[#141414] lg:w-[556px] text-4xl lg:leading-[82px] font-inter font-bold lg:text-[104px] mx-auto text-center mt-[42px] lg:mt-[66px]'>
+          <p className='text-[#141414] lg:w-[556px] text-[38px] lg:leading-[82px] font-inter font-bold lg:text-[104px] mx-auto text-center mt-[42px] lg:mt-[66px]'>
             The Grand Launch
           </p>
         </div>

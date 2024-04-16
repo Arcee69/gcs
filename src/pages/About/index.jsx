@@ -3,7 +3,8 @@ import { Divider } from '@mui/material'
 import { Form, Formik } from 'formik'
 import { CgSpinner } from 'react-icons/cg'
 
-import LongTrain from "../../assets/png/long_train.png"
+// import LongTrain from "../../assets/png/long_train.png"
+import LongTrain from "../../assets/png/about-b.jpg"
 import GCES from "../../assets/png/gces.png"
 import Art from "../../assets/png/art.png"
 import { useNavigate } from 'react-router-dom'
@@ -18,8 +19,8 @@ const About = () => {
     <div className='w-full mt-32'>
       <div className='flex flex-col px-5 lg:px-[70px]'>
         <div className='flex flex-col lg:flex-row items-start gap-5 lg:gap-[150px]'>
-          <p className='text-[#DF632D] font-semibold font-inter text-[34px]  animate__animated animate__fadeInLeftBig w-44 lg:text-[28px] xl:text-[41px]'>About Us</p>
-          <p className='font-inter font-medium text-lg lg:text-[22px] text-[#000] lg:w-[796px] animate__animated animate__fadeInRightBig'>
+          <p className='text-[#DF632D] font-semibold font-inter text-[34px]  animate__animated animate__fadeInLeftBig   xl:text-[41px]'>About Us</p>
+          <p className='font-inter font-medium text-lg xl:text-[22px] text-[#000] lg:w-[796px] animate__animated animate__fadeInRightBig'>
             The Global Centre of Excellence in Sustainability (GCS) is a leader in the 
             sustainability field, providing a wide range of services to help organisations 
             achieve their environmental and social goals. GCS offers services such as 
@@ -55,7 +56,7 @@ const About = () => {
             <img src={GCES} alt='GCES' className='w-[249px] rounded-xl' />
             <img src={Art} alt='ART' className='w-[249px] rounded-xl' />
           </div>
-          <p className='font-inter font-medium text-[14px] md:text-[19px] lg:leading-[52px] lg:w-[1025px]'>
+          <p className='font-inter font-medium text-[14px] md:text-[19px]  lg:w-[1025px]'>
             GCS & ART are UK-based international companies leading not only in sustainability consultancy 
             consultancy but also a global leader in safety, reliability and assurance systems engineering 
             systems consultancy, within the train metro and energy sectors.

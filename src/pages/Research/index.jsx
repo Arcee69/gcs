@@ -83,14 +83,14 @@ const Research = () => {
   return (
     <div className='mt-32'>
       <div className='flex flex-col gap-[4px] px-5 lg:px-[140px] animate__animated animate__fadeInUp'>
-        <p className='text-[#DF632D] font-inter font-semibold text-[41px]'>Research</p>
-        <p className='text-[22px] text-[#000] font-inter w-full'>
+        <p className='text-[#DF632D] font-inter font-semibold text-[34px] xl:text-[41px]'>Research</p>
+        <p className='text-[22px] xl:text-[22px]  text-[#000] font-inter w-full'>
           At GCS we are teaming together with research institutions, government organisations, and universities. 
           Collaborating with professionals in the field can accelerate research and provide access to innovative 
           technology. 
         </p>
       </div>
-      <div className='grid w-full gap-14 grid-cols-1 lg:grid-cols-2 px-5 lg:px-[140px] mt-[65px] animate__animated animate__fadeInUp'>
+      <div className='grid w-full gap-14 grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 px-5 lg:px-[140px] mt-[65px] animate__animated animate__fadeInUp'>
         {
           research.map((item, index) => (
             <div key={index} className='bg-[#3D5462] w-[100%] hover:bg-[#21A99D] cursor-pointer h-[290px] flex flex-col justify-between p-4' onClick={() => {navigate(item?.link); window.scroll(0, 0)}}>
