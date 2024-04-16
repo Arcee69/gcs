@@ -3,7 +3,7 @@ import { Divider } from '@mui/material'
 import { Form,Formik } from 'formik';
 import { CgSpinner } from 'react-icons/cg';
 
-import Sustainability from "../../assets/vid/vid_1.mp4"
+import Sustainability from "../../assets/vid/vid_2.mp4"
 
 import AirEmission from "../../assets/svg/air_emission.svg";
 import Waste from "../../assets/svg/waste.svg";

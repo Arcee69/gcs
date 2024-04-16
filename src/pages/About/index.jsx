@@ -2,12 +2,17 @@ import React from 'react'
 import { Divider } from '@mui/material'
 import { Form, Formik } from 'formik'
 import { CgSpinner } from 'react-icons/cg'
+import { useNavigate } from 'react-router-dom'
 
 // import LongTrain from "../../assets/png/long_train.png"
 import LongTrain from "../../assets/png/about-b.jpg"
 import GCES from "../../assets/png/gces.png"
 import Art from "../../assets/png/art.png"
-import { useNavigate } from 'react-router-dom'
+import BgMobile from "../../assets/png/bg-mobile.png"
+
+import AboutMask from "../../assets/svg/about-2.svg"
+import Eye from "../../assets/svg/eye.svg"
+import Commit from "../../assets/svg/commit.svg"
 
 const About = () => {
 
@@ -29,7 +34,52 @@ const About = () => {
           </p>
         </div>
         <img src={LongTrain} alt='long train' className='mt-14 rounded-xl animate__animated animate__fadeInUpBig '/>
-        <div className='mt-[42px] lg:mt-24 flex flex-col gap-5 animate__animated animate__fadeInUpBig '>
+
+        <div className='relative lg:mt-[79px] mb-[79px] flex flex-col lg:flex-row gap-[200px] px-5 lg:px-[120px]'>
+
+        <div className='flex flex-col items-center justify-center relative animate__animated animate__fadeInRightBig animate__delay-2s lg:hidden'>
+          <div className='flex absolute top-[33px] left-[40px] md:right-[200px]'>
+            <img src={BgMobile} alt='bg-mobile' className=' h-[320px]'/>
+            <img src={AboutMask} alt='Stroller' className='rounded-[171px] absolute h-[300px] top-[30px] left-[30px]' />
+          </div>
+        </div>
+
+          <div className='flex flex-col mt-64 lg:mt-0 lg:w-[505px] my-auto gap-[36px]'>
+            <div className='flex flex-col gap-3'>
+              <div className='flex items-center gap-4'>
+                <img src={Eye} alt='icon' />
+                <p className='font-inter text-[26px] font-medium text-[#DF632D] '>Our objective</p>
+              </div>
+              <p className='lg:w-[470px] text-lg leading-[36px] font-inter font-medium'>
+                Driving transformative change, inspiring action, and 
+                contributing to the achievement of global sustainability goals.
+              </p>
+              <Divider className='bg-[#000]' />
+            </div>
+
+            <div className='flex flex-col gap-3'>
+              <div className='flex items-center gap-4'>
+                <img src={Commit} alt='icon' />
+                <p className='font-inter text-[26px] font-medium text-[#DF632D] '>Our commitment</p>
+              </div>
+              <p className='lg:w-[470px] text-lg leading-[36px]  font-inter font-medium'>
+                create a lasting positive impact on the planet and its 
+                inhabitants, contributing to a future where prosperity and 
+                well-being align with environmental stewardship and social equity. 
+              </p>
+            </div>
+          </div>
+
+          <div className='hidden lg:flex flex-col relative animate__animated animate__fadeInRightBig animate__delay-2s'>
+            <div className='bg-[#02A396] w-[343px] h-[225px] rounded-[171px]'></div>
+            <div className='flex absolute top-[43px] right-[37px]'>
+              <div className='bg-[#FFDECD] w-[343px] h-[537px] rounded-[171px]'></div>
+              <img src={AboutMask} alt='AboutMask'  className='rounded-[171px] absolute top-[10px] left-[37px]' />
+            </div>
+          </div>
+        </div>
+
+        {/* <div className='mt-[42px] lg:mt-24 flex flex-col gap-5 animate__animated animate__fadeInUpBig '>
           <p className='font-inter text-[29px] font-medium text-[#DF632D] '>Our objective</p>
           <p className='lg:w-[854px] text-lg lg:text-[29px] lg:leading-[52px] font-inter font-medium'>
             Driving transformative change, inspiring action, and 
@@ -43,10 +93,11 @@ const About = () => {
             inhabitants, contributing to a future where prosperity and 
             well-being align with environmental stewardship and social equity. 
           </p>
-        </div>
+        </div> */}
+
       </div>
 
-      <div className='px-5 lg:px-[70px] flex flex-col mt-[42px] lg:mt-[151px]'>
+      <div className='px-5 lg:px-[70px] flex flex-col mt-[42px] lg:mt-[200px]'>
         <div className='flex flex-col'>
           <Divider className='bg-[#000]'/>
           <p className='font-inter text-[9px] font-bold'>GCS & ART</p>

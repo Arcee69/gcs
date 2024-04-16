@@ -3,6 +3,8 @@ import { Form, Formik } from 'formik'
 import { CgSpinner } from 'react-icons/cg'
 
 
+import ResearchImg from "../../assets/png/research-b.jpg"
+
 import Tech from "../../assets/svg/ai_tech.svg"
 import ActiveTravel from "../../assets/svg/active_travel.svg"
 import Bio from "../../assets/svg/bio.svg"
@@ -89,6 +91,7 @@ const Research = () => {
           Collaborating with professionals in the field can accelerate research and provide access to innovative 
           technology. 
         </p>
+      <img src={ResearchImg} alt='ResearchImg' className='mt-[42px] xl:mt-[82px] lg:w-[100%] rounded-xl animate__animated animate__fadeInRight' />
       </div>
       <div className='grid w-full gap-14 grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 px-5 lg:px-[140px] mt-[65px] animate__animated animate__fadeInUp'>
         {
