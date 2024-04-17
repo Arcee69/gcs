@@ -69,7 +69,7 @@ const Footer = () => {
                 </Link>
                 <Link to=" https://www.instagram.com/gcesustainability?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw== "><img src={Instagram} alt='instagram' /></Link>
             </div>
-            <p className='font-inter text-sm text-[#000] mt-[21px]'>inf@gce-sustainability.org</p>
+            <a href="mailto:info@gce-sustainability.org" className='font-inter cursor-pointer text-sm text-[#000] mt-[21px]'>info@gce-sustainability.org</a>
 
         </div>
     </div>
