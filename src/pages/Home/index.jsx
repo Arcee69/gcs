@@ -93,14 +93,15 @@ const Home = () => {
             autoPlay
             loop
             muted
+            playsInline
             style={{
-            position: 'absolute',
-            top: 0,
-            left: 0,
-            width: '100%',
-            height: '100%',
-            objectFit: 'cover',
-            zIndex: -1, // Ensure the video is rendered behind other content
+              position: 'absolute',
+              top: 0,
+              left: 0,
+              width: '100%',
+              height: '100%',
+              objectFit: 'cover',
+              zIndex: -1, // Ensure the video is rendered behind other content
             }}
         >
         <source src={HomeHero} type="video/mp4" />
