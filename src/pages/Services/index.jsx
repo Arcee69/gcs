@@ -63,7 +63,7 @@ const Services = () => {
             <p className='lg:w-[736px] text-center font-medium font-inter text-3xl lg:text-[67px] lg:leading-[82px] animate__animated animate__fadeInRight animate__delay-2s'>
                 Let’s Collaborate in building a better future
             </p>
-            <div className='mt-[42px] xl:mt-[100px] mb-[100px] xl:mb-[165px]'>
+            <div className='mt-[42px] xl:mt-[100px] mb-[100px] '>
                 <Formik
                 initialValues={{
                     firstName: "",

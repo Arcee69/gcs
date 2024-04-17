@@ -1,10 +1,12 @@
 import React, { useState } from 'react'
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, Link } from 'react-router-dom'
+import { FaLinkedin } from "react-icons/fa";
 
 import Facebook from "../assets/svg/facebook.svg"
 import Twitter from "../assets/svg/twitter.svg"
 import X from "../assets/svg/twitter-x.svg"
 import Instagram from "../assets/svg/instagram.svg"
+
 
 const Footer = () => {
     const [text, setText] = useState("")
@@ -60,11 +62,12 @@ const Footer = () => {
             >
                 Subscribe
             </button>
-            <div className='flex items-center gap-[25px] mt-[44px]'>
-                <img src={Facebook} alt='facebook' />
-                <img src={Twitter} alt='twitter' />
-                <img src={Instagram} alt='instagram' />
-                <img src={X} alt='X' />
+            <div className='flex items-center gap-[15px] mt-[44px]'>
+                <Link to=" https://web.facebook.com/profile.php?id=61551711217899&sk=about"><img src={Facebook} alt='facebook' /></Link>
+                <Link to=" https://www.linkedin.com/company/the-global-centre-of-excellence-in-sustainability/" >
+                    <FaLinkedin className=' w-[26px] h-[26px]'/>
+                </Link>
+                <Link to=" https://www.instagram.com/gcesustainability?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw== "><img src={Instagram} alt='instagram' /></Link>
             </div>
             <p className='font-inter text-sm text-[#000] mt-[21px]'>inf@gce-sustainability.org</p>
 
