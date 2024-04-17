@@ -128,6 +128,8 @@ const Assessment = () => {
         autoPlay
         loop
         className='mt-[62px] w-full lg:w-[90%] lg:mx-auto'
+        muted
+        playsInline
       >
         <source src={Sustainability} type="video/mp4" ></source>
       </video>
