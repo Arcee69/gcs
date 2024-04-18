@@ -63,11 +63,11 @@ const Footer = () => {
                 Subscribe
             </button>
             <div className='flex items-center gap-[15px] mt-[44px]'>
-                <Link to=" https://web.facebook.com/profile.php?id=61551711217899&sk=about"><img src={Facebook} alt='facebook' /></Link>
-                <Link to=" https://www.linkedin.com/company/the-global-centre-of-excellence-in-sustainability/" >
+                <Link to="https://web.facebook.com/profile.php?id=61551711217899&sk=about" target='_blank'><img src={Facebook} alt='facebook' /></Link>
+                <Link to="https://www.linkedin.com/company/the-global-centre-of-excellence-in-sustainability/" target='_blank'>
                     <FaLinkedin className=' w-[26px] h-[26px]'/>
                 </Link>
-                <Link to=" https://www.instagram.com/gcesustainability?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw== "><img src={Instagram} alt='instagram' /></Link>
+                <Link to="https://www.instagram.com/gcesustainability?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target='_blank'><img src={Instagram} alt='instagram' /></Link>
             </div>
             <a href="mailto:info@gce-sustainability.org" className='font-inter cursor-pointer text-sm text-[#000] mt-[21px]'>info@gce-sustainability.org</a>
 
