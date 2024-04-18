@@ -13,7 +13,7 @@ const MiniHeader = () => {
   return (
     <div className='w-full fixed z-10'>
         <div  className='w-full mx-auto h-[58px] bg-[#FFF] py-[16px] px-[14px]  flex justify-between items-center'>
-            <img src={Logo} alt='logo' className='w-[113px] h-[45px]' onClick={() => navigate("/")} />
+            <img src={Logo} alt='logo' className='w-[150px] h-[50px]' onClick={() => navigate("/")} />
             <img src={Hamburger} alt='logo'  className='w-[21px] h-[16px]' onClick={() => setOpen(true)}/>
         </div>
         {open && <MobileNavBar handleClose={() => setOpen(false)} /> }
