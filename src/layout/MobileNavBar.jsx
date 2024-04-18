@@ -14,6 +14,7 @@ const MobileNavBar = ({ handleClose}) => {
                 <img src={Close} alt="close" className="cursor-pointer" onClick={handleClose}/>
             </div>
             <ul class="mt-[32px] flex flex-col gap-y-[24px] pb-[16px]">
+                <li onClick={() => {navigate("/"); window.scrollTo(0,0); handleClose()}} className="font-mont  cursor-pointer font-semibold text-[17px]  text-[#00141B]">Home</li>
                 <li onClick={() => {navigate("/about"); window.scrollTo(0,0); handleClose()}} className="font-mont  cursor-pointer font-semibold text-[17px]  text-[#00141B]">About us</li>
                 <li onClick={() => {navigate("/events"); window.scrollTo(0,0); handleClose()}} className="font-mont  cursor-pointer font-semibold text-[17px] text-[#00141B]">Event</li>
                 <li onClick={() => {navigate("/services"); window.scrollTo(0,0); handleClose()}} className="font-mont  cursor-pointer font-semibold text-[17px]  text-[#00141B]">Services</li>

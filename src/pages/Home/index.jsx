@@ -138,14 +138,14 @@ const Home = () => {
       
       <div className='relative mt-[35px] flex flex-col xl:flex-row gap-[200px] px-5 lg:px-[130px] '> {/* justify-between */}
 
-        <div className='flex flex-col items-center justify-center relative animate__animated animate__fadeInRightBig animate__delay-2s xl:hidden'>
+        <div className='flex flex-col hidden items-center justify-center relative animate__animated animate__fadeInRightBig animate__delay-2s xl:hidden'>
           <div className='flex absolute top-[33px] left-[40px] md:right-[200px]'>
             <img src={BgMobile} alt='bg-mobile' className=' h-[320px]'/>
             <img src={Stroller} alt='Stroller' className='rounded-[171px] absolute h-[300px] top-[30px] left-[30px]' />
           </div>
         </div>
 
-        <div className='flex flex-col mt-64 xl:mt-0 xl:w-[505px] gap-[36px]'>
+        <div className='flex flex-col mt-14 xl:mt-0 xl:w-[505px] gap-[36px]'> {/* mt-64  */}
           <div className='flex flex-col gap-[9px]'>
             <div className='flex items-center gap-4'>
               <img src={Bulb} alt='icon' />

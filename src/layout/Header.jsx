@@ -14,6 +14,7 @@ const Header = () => {
        <img src={Logo} alt='logo' className='w-48 cursor-pointer' onClick={() => {navigate("/"), window.scrollTo(0, 0)}}/>
         <div className='flex gap-[59px] items-center'>
             <ul className='flex gap-[50px] items-center list-none'>
+                <li className='font-inter font-semibold cursor-pointer text-[15px] text-BLACK-_100' onClick={() => {navigate("/"), window.scrollTo(0, 0)}}>Home</li>
                 <li className='font-inter font-semibold cursor-pointer text-[15px] text-BLACK-_100' onClick={() => {navigate("/about"), window.scrollTo(0, 0)}}>About us</li>
                 <li className='font-inter font-semibold cursor-pointer text-[15px] text-BLACK-_100' onClick={() => {navigate("/events"), window.scrollTo(0, 0)}}>Events</li>
                 <li className='font-inter font-semibold cursor-pointer text-[15px] text-BLACK-_100' onClick={() => {navigate("/services"), window.scrollTo(0, 0)}}>Services</li>
